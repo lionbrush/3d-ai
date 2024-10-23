@@ -1,3 +1,3 @@
-# My Site about Nigerian Pidgin English
+# My Test Site
 
-[Learn more about Pidgin](introduction.md)
+[Learn more about my Test Site](introduction.md)
