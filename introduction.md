@@ -3,6 +3,7 @@
 
 ## Overview
 Pidgin-Audio is a [brief description of your project]. It aims to [explain main purpose or goal].
+[SAMPLE LYRICS](benin-boys.md).
 
 ---
 
