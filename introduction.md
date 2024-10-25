@@ -1,9 +1,9 @@
 [Back to main README](README.md)
-# LIONBRUSH - Test - Pidgin-Audio 🎵
+# 3d-ai
 
 ## Overview
-Pidgin-Audio is a [brief description of your project]. It aims to [explain main purpose or goal].
-[SAMPLE LYRICS](benin-boys.md).
+3d-ai is a work-in-progress. It aims to explore intersections of 3D & AI technologies.
+[AI TOOLS](benin-boys.md).
 
 ---
 
