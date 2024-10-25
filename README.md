@@ -3,7 +3,7 @@
 # Pidgin-Audio
 
 ## Overview
-Pidgin-Audio is an audio processing tool for pidgin languages. [Read more about test site](introduction.md).
+3d-ai is an experimental testing site for advances in AI 3D video tools. [Read more about test site](introduction.md).
 
 # Features
 ...
