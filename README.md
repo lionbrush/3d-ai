@@ -16,6 +16,8 @@ This repository includes the following sections:
 - **/docs**: Documentation, experimentation logs, and insights gathered throughout the project.
 - **/assets**: Visual assets and media generated or used in the project.
 
-## Getting Started
+### Licenses
 
-To get started with the resources in this repository, clone the repository and explore the documentation in each folder. You’ll find detailed instructions on the AI and 3D tools setup and how they contribute to my experiments.
+- **Code License**: The code in this repository is licensed under the [MIT License](LICENSE), allowing for free use, modification, and distribution with attribution.
+- **Creative Assets License**: All creative assets, such as images, videos, and documentation, are licensed under the [Creative Commons Attribution-NonCommercial-NoDerivs 4.0 International License (CC BY-NC-ND 4.0)](LICENSE-CREATIVE). This means you may share these assets with attribution but cannot use them commercially or modify them.
+
