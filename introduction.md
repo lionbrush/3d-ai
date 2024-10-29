@@ -1,15 +1,10 @@
 [Back to main README](README.md)
-# 3d-ai
-
-## Overview
-3d-ai is a work-in-progress. It aims to explore intersections of 3D & AI technologies.
-[3D TOOLS & AI TOOLS](https://github.com/lionbrush/context-streams-for-applied-AI)).
 
 # Introduction to Applied AI and 3D Tools Project
 
 ## About Me
 
-Hello! My name is HAJ, and I’m currently working on integrating AI into 3D modeling, animation, and design workflows. With a background as a 3d generalist, I’m excited to explore how AI can streamline and enhance the creative process in 3D art, animation, & VFX.
+Hello! My name is HAJ, and I’m currently working on integrating AI into 3D modeling, animation, and design workflows. With a background as a 3d generalist, I’m excited to explore how AI can streamline and enhance the creative process in 3D art, animation, & VFX. You can see some of my work on my website at [www.lionbrush.com](https://www.lionbrush.com).
 
 ## Project Overview
 
