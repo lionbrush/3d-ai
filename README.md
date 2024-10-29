@@ -19,15 +19,3 @@ This repository includes the following sections:
 ## Getting Started
 
 To get started with the resources in this repository, clone the repository and explore the documentation in each folder. You’ll find detailed instructions on the AI and 3D tools setup and how they contribute to my experiments.
-
-```shell
-git clone https://github.com/username/repository-name
-
-
-
-3d-ai is an experimental testing site for advances in AI 3D video tools. [Read more about test site](introduction.md).
-[Context Streams for Applied AI](https://github.com/lionbrush/context-streams-for-applied-AI)
-
-# Features
-Coming Soon...
-
