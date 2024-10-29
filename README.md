@@ -7,7 +7,7 @@ Welcome to my Applied AI and 3D Tools project repository! This repository is par
 This project is focused on integrating AI and 3D tools for creating efficient workflows and producing compelling visuals. My goal is to combine advanced AI models with traditional 3D tools, experimenting with processes that could benefit artists and designers in fields like animation, VFX, game development, and 3D digital art.
 
 - **Introduction**: [Read my full introduction](introduction.md) to learn more about my background and goals for this project.
-- **Context Streams**: [Visit my Context Streams Repository](https://github.com/username/context-streams-for-applied-AI) where I list and describe the **3D Tools** and **AI Tools** I’m exploring in this project.
+- **Context Streams**: [Visit my Context Streams Repository](https://github.com/lionbrush/context-streams-for-applied-AI) where I list and describe the **3D Tools** and **AI Tools** I’m exploring in this project.
 
 ## Repository Structure
 
