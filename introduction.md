@@ -3,7 +3,7 @@
 
 ## Overview
 3d-ai is a work-in-progress. It aims to explore intersections of 3D & AI technologies.
-[AI TOOLS](benin-boys.md).
+[3D TOOLS & AI TOOLS](https://github.com/lionbrush/context-streams-for-applied-AI)).
 
 ---
 
