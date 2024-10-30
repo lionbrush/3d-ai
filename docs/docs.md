@@ -1,3 +1,3 @@
 # DOCS
 
-[Back Home](/) |  [DOCS](/docs/) |  [SRC](/src/)
+[Back Home](/) |  [ASSETS](/assets/) |  [SRC](/src/)
