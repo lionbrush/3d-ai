@@ -8,3 +8,11 @@
 - Experimenting with AI-driven procedural animations for repetitive motions (like breathing, blinking).
 
 **Tools**: Motion Capture AI, Rokoko Studio, ControlNet for pose adjustments.
+
+### Resources for Rigging & Motion-Capture Enhancement
+- [Rokoko Motion Library](https://www.rokoko.com/) - Real-time motion capture and animation.
+- [Cascadeur](https://cascadeur.com/) - Physics-based character animation tool.
+- [Mixamo by Adobe](https://www.mixamo.com/) - Free online tool for rigging and animating characters.
+- [Reallusion iClone](https://www.reallusion.com/iclone/) - Motion capture and character animation tool.
+- [ControlNet with Blender](https://github.com/lllyasviel/ControlNet) - Pose refinement in Blender.
+- [Move AI](https://www.move.ai) - AI driven motion capture.
