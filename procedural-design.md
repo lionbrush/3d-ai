@@ -15,3 +15,5 @@
 - [Blender Market](https://blendermarket.com/) - Add-ons for procedural generation and UV mapping.
 - [Houdini Tutorials by SideFX](https://www.sidefx.com/learn/) - Learn procedural modeling in Houdini.
 - [ControlNet Documentation](https://github.com/lllyasviel/ControlNet) - Guide to ControlNet’s pose control features.
+
+[Back Home](/) |  [On to Rigging & Motion-Capture](rigging-motion-capture.md)
