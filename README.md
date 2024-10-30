@@ -13,6 +13,7 @@ This project is focused on integrating AI and 3D tools for creating efficient wo
 
 This repository provides resources and guides for anyone interested in the art of 3D character creation and short film production using AI-assisted tools. Whether you’re developing realistic creatures, stylized characters, or entire cinematic scenes, this guide outlines various approaches to combine AI with traditional techniques for more efficient and expressive results.
 
+This repository includes the following sections:
 1. [The Concept Development & Inspiration Method](concept-development.md)
 2. [The Procedural-Based Design Method](procedural-design.md)
 3. [The Rigging & Motion-Capture Enhancement Method](rigging-motion-capture.md)
