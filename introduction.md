@@ -1,4 +1,4 @@
-[Back to main README](README.md)
+[Back Home](README.md)
 
 # Introduction to Applied AI and 3D Tools Project
 
@@ -41,4 +41,8 @@ As I progress, I’ll be experimenting with various AI models, integrating them 
 
 ---
 
-Thank you for joining me on this journey into the intersection of AI and 3D creation! Stay tuned for updates in the [3d-ai repository](https://github.com/lionbrush/3d-ai).
+Thank you for joining me on this journey into the intersection of AI and 3D creation! 
+
+[Back Home](/) |  [On to Concept Development & Inspiration](concept-development.md)
+
+
