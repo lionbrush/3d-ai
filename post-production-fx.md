@@ -8,3 +8,9 @@
 - Final editing and color grading to unify style and enhance mood.
 
 **Tools**: Adobe After Effects (for post-production), Runway ML for AI-powered effects, Nuke for compositing, Suno & Udio for sound/music.
+
+### Resources for Post-Production & FX Enhancement
+- [DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve/) - Video editing and color grading tool.
+- [After Effects Tutorials](https://helpx.adobe.com/after-effects/tutorials.html) - Adobe After Effects tutorials for post-production.
+- [Runway ML Documentation](https://docs.runwayml.com/) - Learn Runway ML for AI-driven visual effects.
+- [Nuke by Foundry](https://www.foundry.com/products/nuke) - Tool for compositing and adding VFX.
