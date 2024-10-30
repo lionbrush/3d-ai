@@ -23,4 +23,4 @@
 - [Suno AI](https://www.suno.ai/) - AI-powered tool for generating and customizing music, soundscapes, and sound effects in animation and film projects.
 - [Udio](https://www.udio.ai/) - A dynamic AI-driven music generation tool that offers customizable soundtracks.
 
-[Back Home]
+[Back Home](/)
