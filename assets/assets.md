@@ -1,5 +1,8 @@
 # ASSETS
 
+# ASSETS
+
+```mermaid
 graph TD
     Start((Project Start)) --> Concept
 
@@ -41,7 +44,7 @@ graph TD
 
     style Start fill:#90EE90
     style Final fill:#FFB6C1
-
+```
 
 [Back Home](/) |  [DOCS](/docs/) |  [SRC](/src/)
 
