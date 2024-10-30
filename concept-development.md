@@ -18,6 +18,7 @@ This method focuses on generating initial concepts, experimenting with visual st
 - [Behance](https://www.behance.net/) - Browse design projects across multiple disciplines.
 - [Coolors](https://coolors.co/) - Generate color palettes for mood and style.
 - [Adobe Color](https://color.adobe.com/create) - Create and explore color schemes.
+- [Pinterest](https://www.pinterest.com/) - Browse images for inspiration.
 
 ### AI Tools for Visual Style and Exploration
 - [Deep Dream Generator](https://deepdreamgenerator.com/) - Generate surreal and abstract visuals.
