@@ -4,7 +4,7 @@
 
 ## About Me
 
-Hello! My name is HAJ, and I’m currently working on integrating AI into 3D modeling, animation, and design workflows. With a background as a 3d generalist, I’m excited to explore how AI can streamline and enhance the creative process in 3D art, animation, & VFX. You can see some of my work on my website at [www.lionbrush.com](https://www.lionbrush.com). :LION: :BRUSH:
+Hello! My name is HAJ, and I’m currently working on integrating AI into 3D modeling, animation, and design workflows. With a background as a 3d generalist, I’m excited to explore how AI can streamline and enhance the creative process in 3D art, animation, & VFX. You can see some of my work on my website at [www.lionbrush.com](https://www.lionbrush.com). :TIGER: :BRUSH:
 
 ## Project Overview
 
