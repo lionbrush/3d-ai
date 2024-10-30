@@ -26,3 +26,5 @@
 - [Milanote](https://www.milanote.com/) - Organize images, notes, and references.
 - [Unsplash](https://unsplash.com/) - High-quality, royalty-free image resource.
 - [Canva](https://www.canva.com/) - Templates for creating visual style guides and mood boards.
+  
+[Back Home](/) |  [On to Procedural Design](procedural-design.md)
