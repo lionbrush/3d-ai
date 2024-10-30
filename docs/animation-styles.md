@@ -1,4 +1,4 @@
-# Stylized Animation & Creature FX Cheatsheet 🎬🦖
+# Stylized Animation Examples 🎬
 
 ## Part 1: Stylized Animation
 
@@ -42,7 +42,7 @@
 
 ---
 
-## Part 2: Groundbreaking Creature FX
+## Part 2: Groundbreaking Creature FX 🦖
 
 ### 1. Planet of the Apes Trilogy (2011-2017)
 
@@ -140,9 +140,10 @@
 3. ZBrush
 4. Massive
 5. Nuke
+6. AI & Beyond 🚀
 
 
-# Ultimate VFX & Animation Innovation Cheatsheet 🎬🚀
+# Ultimate VFX & Animation Innovation Cheatsheet 🎬
 
 ## Part 1: Anthology & Experimental
 
