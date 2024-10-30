@@ -14,9 +14,9 @@
 - [DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve/) - Video editing and color grading tool widely used in post-production.
 - [Adobe After Effects Tutorials](https://helpx.adobe.com/after-effects/tutorials.html) - Learn compositing, VFX, and animations for post-production.
 - [Runway ML](https://runwayml.com/) - AI-powered effects for green screen, rotoscoping, and video enhancements.
-- [ComfyUI](https://github.com/comfyanonymous/ComfyUI) - A powerful and customizable UI for generative image processing, useful for creating unique FX, image textures, or stylization in post-production.
+- [ComfyUI](https://github.com/comfyanonymous/ComfyUI) - A powerful and customizable UI for generative image processing.
 - [Topaz Labs Video Enhance AI](https://www.topazlabs.com/video-enhance-ai) - AI-based upscaling tool that enhances video resolution, clarity, and quality.
-- [EBSynth](https://ebsynth.com/) - Style transfer tool that allows you to apply hand-drawn textures or animations onto video frames, perfect for adding stylistic effects to footage.
+- [EBSynth](https://ebsynth.com/) - Style transfer tool that allows you to apply hand-drawn textures or animations onto video frames.
 - [Deep Dream Generator](https://deepdreamgenerator.com/) - Create surreal and abstract effects, ideal for enhancing the visual style of VFX shots.
 - [Nuke by Foundry](https://www.foundry.com/products/nuke) - Industry-standard compositing tool for integrating VFX and adjusting complex shots.
-- [Stable Diffusion](https://stability.ai/) - Use for texture generation and background enhancement in complex scenes; can be useful for generating layered images or textures to composite in Nuke or After Effects.
+- [Stable Diffusion](https://stability.ai/) - Use for texture generation and background enhancement in complex scenes.
