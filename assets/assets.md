@@ -1,7 +1,7 @@
 # ASSETS
 
 ```mermaid
-graph TD
+flowchart TD
     Start((Start)) --> Concept
 
     subgraph Concept["1. Concept Development"]
