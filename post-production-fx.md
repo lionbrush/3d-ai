@@ -20,3 +20,5 @@
 - [Deep Dream Generator](https://deepdreamgenerator.com/) - Create surreal and abstract effects, ideal for enhancing the visual style of VFX shots.
 - [Nuke by Foundry](https://www.foundry.com/products/nuke) - Industry-standard compositing tool for integrating VFX and adjusting complex shots.
 - [Stable Diffusion](https://stability.ai/) - Use for texture generation and background enhancement in complex scenes.
+- [Suno AI](https://www.suno.ai/) - AI-powered tool for generating and customizing music, soundscapes, and sound effects in animation and film projects.
+- [Udio](https://www.udio.ai/) - A dynamic AI-driven music generation tool that offers customizable soundtracks.
