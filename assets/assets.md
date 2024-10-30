@@ -1,5 +1,5 @@
 # ASSETS
-```mermaid
+
 graph TD
     Start((Project Start)) --> Concept
 
