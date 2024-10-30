@@ -16,3 +16,5 @@
 - [Reallusion iClone](https://www.reallusion.com/iclone/) - Motion capture and character animation tool.
 - [ControlNet with Blender](https://github.com/lllyasviel/ControlNet) - Pose refinement in Blender.
 - [Move AI](https://www.move.ai) - AI driven motion capture.
+
+[Back Home](/) |  [On to Narrative & Visual Storytelling](narrative-storytelling.md)
