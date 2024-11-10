@@ -7,7 +7,7 @@
 - Creating mood boards and color palettes with AI assistance.
 - Developing backstory and personality traits to guide visual design.
 
-**Tools**: MidJourney, DALL-E, ChatGPT (for narrative and personality development).
+**Tools**: [Midjourney](https://www.midjourney.com), [ChatGPT](https://chatgpt.com/) (for narrative and personality development).
 
 ## Resources for The Concept Development & Inspiration
 - [ArtStation](https://www.artstation.com/) - Explore digital art and concept portfolios.
