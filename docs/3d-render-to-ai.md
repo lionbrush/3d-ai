@@ -10,7 +10,6 @@ I recently rendered an animation of an orb with particles moving around inside. 
 ### Runway Results
 
 I started by testing the video in **Runway**, trying different materials to see what results it could generate. However, some of the outputs were far from ideal, and unfortunately, I ran out of credits before being able to test further. Still, I plan to revisit it for improved results if I can.
-![Original Render](/movies/Original_Render.mp4)
 
 #### Note on Still Images
 Using a still image from the original animation produced notably better results in both **Runway** and **Minimax**. This was an important takeaway that shaped the rest of my experiment.
