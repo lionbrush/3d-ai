@@ -20,14 +20,14 @@ Using a still image from the original animation produced notably better results 
 
 Since ChatGPT doesn’t support video-to-video conversion, I instead used it to generate a prompt based on my original video. Surprisingly, it produced a good starting prompt, which I then entered into **Midjourney**.
 
-![ChatGPT Prompt 1](ChatGPT0.png)
-![ChatGPT Prompt 2](ChatGPT1.png)
+![ChatGPT Prompt 1](/images/ChatGPT0.png)
+![ChatGPT Prompt 2](/images/ChatGPT1.png)
 
 ### Results in Midjourney
 The initial output from Midjourney was intriguing but didn't fully capture the environment I envisioned within the orb. However, by refining the prompt and adding a few keywords, I achieved results that were closer to my vision.
 
-![Midjourney Result 1](MJ0.png)
-![Midjourney Result 2](MJ1.png)
+![Midjourney Result 1](/images/MJ0.png)
+![Midjourney Result 2](/images/MJ1.png)
 
 ---
 
