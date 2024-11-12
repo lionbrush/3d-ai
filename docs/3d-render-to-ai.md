@@ -4,7 +4,7 @@
 Hi Everybody!
 
 I recently rendered an animation of an orb with particles moving around inside. 
-[![3D Orb Animation Render](https://img.youtube.com/vi/2qL-rMq01zo.jpg)](https://youtu.be/2qL-rMq01zo)
+[![3D Orb Animation Render](/images/Original_Render_2.jpg)](https://youtu.be/2qL-rMq01zo)
 It seemed like a great video for experimenting with various AI tools. Here's a summary of my journey and findings.
 
 ---
