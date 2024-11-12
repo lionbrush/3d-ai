@@ -3,7 +3,9 @@
 ### Overview
 Hi Everybody!
 
-I recently rendered an animation of an orb with particles moving around inside. It seemed like a great video for experimenting with various AI tools. Here's a summary of my journey and findings.
+I recently rendered an animation of an orb with particles moving around inside. 
+Here is the [original Blender render I created for testing different AI models](https://youtu.be/2qL-rMq01zo).
+It seemed like a great video for experimenting with various AI tools. Here's a summary of my journey and findings.
 
 ---
 
