@@ -49,13 +49,34 @@
     <p>Hi Everybody!</p>
     <p>I recently rendered an animation of an orb with particles moving around inside.</p>
     
-    <div class="video-container">
-        <a href="https://www.youtube.com/watch?v=2uL-M5GB1zo">
-            <img class="video-thumbnail" src="/images/Original_Screenshot_2.jpg" 
-                 alt="3D Orb Animation" 
-                 title="Click to watch the video on YouTube">
-        </a>
-    </div>
+<div class="video-container" id="video-container">
+    <!-- Video thumbnail first -->
+    <img class="video-thumbnail" 
+         src="https://img.youtube.com/vi/2uL-M5GB1zo/maxresdefault.jpg" 
+         alt="3D Orb Animation"
+         onclick="loadYoutubeVideo()"
+         style="cursor: pointer;">
+</div>
+
+<script>
+function loadYoutubeVideo() {
+    const container = document.getElementById('video-container');
+    const iframe = document.createElement('iframe');
+    iframe.src = "https://www.youtube.com/embed/2uL-M5GB1zo";
+    iframe.width = "100%";
+    iframe.height = "100%";
+    iframe.setAttribute("frameborder", "0");
+    iframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
+    iframe.setAttribute("allowfullscreen", "");
+    iframe.style.position = "absolute";
+    iframe.style.top = "0";
+    iframe.style.left = "0";
+    
+    // Replace the thumbnail with iframe
+    container.innerHTML = '';
+    container.appendChild(iframe);
+}
+</script>
     
     <p>It seemed like a great video for experimenting with various AI tools. Here's a summary of my journey and findings.</p>
 
