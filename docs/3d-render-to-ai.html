@@ -28,10 +28,23 @@
             z-index: 10;
         }
 
-        .navbar h1 {
+        .navbar .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .logo-container img {
+            width: 30px;
+            height: 30px;
+            margin-right: 0.5rem;
+            vertical-align: middle;
+        }
+
+        .navbar .logo-container span {
             color: #ffffff;
             font-size: 1.5rem;
-            margin: 0;
+            font-weight: bold;
+            margin-left: 0.5rem; /* Space between the GIF and "3D-AI" text */
         }
 
         .navbar nav {
@@ -126,10 +139,14 @@
 </head>
 <body>
 
-    <!-- Navbar with Links -->
+    <!-- Navbar with Links and "3D-AI" Text -->
     <div class="navbar">
-        <img src="https://lionbrush.github.io/3d-ai/images/Original_Render.gif" alt="Logo GIF" style="width: 30px; height: 30px; margin-right: 0.5rem; vertical-align: middle;">
-        <span>3D-AI</span>
+        <div class="logo-container">
+            <a href="https://lionbrush.github.io/3d-ai/"> <!-- Link to homepage -->
+                <img src="images/Original_Render.gif" alt="Logo GIF">
+            </a>
+            <span>3D-AI</span>
+        </div>
         <nav>
             <a href="https://lionbrush.github.io/3d-ai/">Home</a>
             <a href="https://github.com/lionbrush/3d-ai">GitHub</a>
