@@ -23,9 +23,9 @@ This repository includes the following sections:
 #### Repository Structure
 
 This repository includes the following sections:
-- **/src**: Contains scripts, code, and workflows I’m developing.
 - **/docs**: Documentation, experimentation logs, and insights gathered throughout the project.
-- **/assets**: Visual assets and media generated or used in the project.
+- **/images**: Contains images from the experimentations throughout the project.
+- **/videos**: Video media generated throughout the project.
 
 ##### Licenses
 
