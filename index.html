@@ -1,83 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D-AI</title>
-    <style>
-        /* General Styling */
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background: #000000; /* Black background */
-            color: #c9d1d9;
-            overflow-x: hidden;
-        }
+<style>
+    /* Navbar Styling */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background: #000000; /* Fully opaque black */
+        position: absolute;
+        width: 100%;
+        box-sizing: border-box;
+        z-index: 10;
+    }
 
-        /* Navbar Styling */
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 2rem;
-            background: #000000; /* Fully opaque black */
-            position: absolute;
-            width: 100%;
-            box-sizing: border-box;
-            z-index: 10;
-        }
+    .navbar .logo-container {
+        display: flex;
+        align-items: center;
+    }
 
-        .navbar .logo-container {
-            display: flex;
-            align-items: center;
-        }
+    .navbar .logo-container img {
+        width: 30px; /* Fixed width */
+        height: 30px; /* Fixed height */
+        margin-right: 0.5rem;
+        vertical-align: middle;
+    }
 
-        .navbar .logo-container img {
-            width: 40px; /* Adjusted width */
-            height: auto;
-            margin-right: 0.5rem;
-            vertical-align: middle;
-        }
+    .navbar .logo-container span {
+        color: #ffffff;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-left: 0.5rem; /* Space between the GIF and "3D-AI" text */
+    }
 
-        .navbar nav {
-            display: flex;
-            gap: 1rem;
-        }
+    .navbar nav {
+        display: flex;
+        gap: 1rem;
+    }
 
-        .navbar a {
-            color: #58a6ff;
-            text-decoration: none;
-            font-size: 1rem;
-        }
+    .navbar a {
+        color: #58a6ff;
+        text-decoration: none;
+        font-size: 1rem;
+    }
 
-        .navbar a:hover {
-            text-decoration: underline;
-        }
-
-        /* Additional CSS for other elements if needed */
-    </style>
-</head>
-<body>
-
-    <div class="navbar">
-        <div class="logo-container">
-            <a href="index.html"><img src="images/logo.png" alt="3D-AI Logo"></a>
-        </div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="https://github.com/lionbrush/3d-ai" target="_blank">GitHub</a>
-        </nav>
-    </div>
-
-    <div class="hero">
-        <!-- Hero content here -->
-    </div>
-
-    <div class="content">
-        <!-- Main page content here -->
-    </div>
-
-</body>
-</html>
+    .navbar a:hover {
+        text-decoration: underline;
+    }
+</style>
