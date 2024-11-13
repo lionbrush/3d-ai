@@ -5,43 +5,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to 3D AI Experiments</title>
     <style>
+        /* General Styling */
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
+            margin: 0;
+            padding: 0;
             background: #0d1117;
             color: #c9d1d9;
         }
-        
-        h1, h2 {
-            color: #ffffff;
-            text-align: center;
-            padding-bottom: 0.3em;
+
+        /* Navbar Styling */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: #161b22;
             border-bottom: 1px solid #30363d;
         }
-        
-        p {
-            text-align: center;
+
+        .navbar h1 {
+            color: #ffffff;
+            font-size: 1.5rem;
         }
-        
-        a {
+
+        .navbar a {
             color: #58a6ff;
             text-decoration: none;
+            margin-left: 1rem;
         }
-        
-        a:hover {
+
+        .navbar a:hover {
             text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 3rem 1rem;
+            background: linear-gradient(135deg, #1a73e8, #3f51b5);
+            color: #ffffff;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            padding-bottom: 0.5rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            padding-bottom: 1rem;
+        }
+
+        /* Link Button Styling */
+        .link-button {
+            display: inline-block;
+            background-color: #58a6ff;
+            color: #ffffff;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+
+        .link-button:hover {
+            background-color: #1f6feb;
+        }
+
+        /* Content Section */
+        .content {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .content h2 {
+            color: #ffffff;
+            border-bottom: 1px solid #30363d;
+            padding-bottom: 0.3em;
+            margin-top: 2rem;
+        }
+
+        .content p {
+            margin: 1rem 0;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to 3D AI Experiments</h1>
-    <p>Explore my experiments in combining 3D with AI-enhanced tools.</p>
-    <h2>Sections</h2>
-    <p><a href="https://lionbrush.github.io/3d-ai/docs/3d-render-to-ai.html">Exploring AI Enhanced Video from 3D Orb Animation</a></p>
-    <h2>About This Repository</h2>
-    <p>This repository contains documentation, images, and resources for our 3D and AI integration experiments.</p>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <h1>3D AI Experiments</h1>
+        <div>
+            <a href="https://github.com/lionbrush/3d-ai">GitHub Repository</a>
+            <a href="https://lionbrush.github.io/3d-ai/">Homepage</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Welcome to 3D AI Experiments</h1>
+        <p>Explore our experiments in combining 3D rendering with AI-enhanced tools. Dive into the exciting fusion of 3D art and artificial intelligence!</p>
+        <a href="https://lionbrush.github.io/3d-ai/docs/3d-render-to-ai.html" class="link-button">View 3D Orb Animation Experiment</a>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content">
+        <h2>About This Repository</h2>
+        <p>This repository contains documentation, images, and resources for our 3D and AI integration experiments. Discover how we use AI to enhance 3D animations and renderings in creative ways.</p>
+    </div>
+
 </body>
 </html>
