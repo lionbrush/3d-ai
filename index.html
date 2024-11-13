@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to 3D AI Experiments</title>
+    <title>HAJ'S 3D AI SITE</title>
     <style>
         /* General Styling */
         body {
@@ -13,6 +13,7 @@
             padding: 0;
             background: #0d1117;
             color: #c9d1d9;
+            overflow-x: hidden;
         }
 
         /* Navbar Styling */
@@ -23,6 +24,8 @@
             padding: 1rem 2rem;
             background: #161b22;
             border-bottom: 1px solid #30363d;
+            position: relative;
+            z-index: 10;
         }
 
         .navbar h1 {
@@ -45,18 +48,21 @@
             text-decoration: underline;
         }
 
-        /* Hero Section */
+        /* Hero Section with Video Background */
         .hero {
+            position: relative;
             text-align: center;
             padding: 3rem 1rem;
-            background: linear-gradient(135deg, #1a73e8, #3f51b5);
             color: #ffffff;
+            overflow: hidden;
         }
 
         .hero h1 {
             font-size: 2.5rem;
             margin: 0;
             padding-bottom: 0.5rem;
+            z-index: 10;
+            position: relative;
         }
 
         .hero p {
@@ -64,9 +70,10 @@
             max-width: 700px;
             margin: 0 auto;
             padding-bottom: 1rem;
+            z-index: 10;
+            position: relative;
         }
 
-        /* Link Button Styling */
         .link-button {
             display: inline-block;
             background-color: #58a6ff;
@@ -76,10 +83,24 @@
             text-decoration: none;
             font-weight: bold;
             margin-top: 1rem;
+            z-index: 10;
+            position: relative;
         }
 
         .link-button:hover {
             background-color: #1f6feb;
+        }
+
+        /* Background Video */
+        .background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+            opacity: 0.7;
         }
 
         /* Content Section */
@@ -106,7 +127,7 @@
 
     <!-- Navbar with Menu Links -->
     <div class="navbar">
-        <h1>3D AI Experiments</h1>
+        <h1>HAJ'S 3D AI SITE</h1>
         <nav>
             <a href="https://lionbrush.github.io/3d-ai/">Home</a>
             <a href="https://lionbrush.github.io/3d-ai/docs/concept-development.html">Concept Development</a>
@@ -116,17 +137,22 @@
         </nav>
     </div>
 
-    <!-- Hero Section -->
+    <!-- Hero Section with Video Background -->
     <div class="hero">
-        <h1>Welcome to 3D AI Experiments</h1>
-        <p>Explore our experiments in combining 3D rendering with AI-enhanced tools. Dive into the exciting fusion of 3D art and artificial intelligence!</p>
+        <video autoplay muted loop class="background-video">
+            <source src="https://lionbrush.github.io/3d-ai/videos/Original_Render.mp4" type="video/mp4">
+            <!-- Optional: Add a fallback image or message if video does not load -->
+            Your browser does not support the video tag.
+        </video>
+        <h1>Welcome to HAJ'S 3D AI SITE</h1>
+        <p>Explore my experiments in combining 3D rendering with AI-enhanced tools. Dive into the exciting fusion of 3D art and artificial intelligence!</p>
         <a href="https://lionbrush.github.io/3d-ai/docs/3d-render-to-ai.html" class="link-button">View 3D Orb Animation Experiment</a>
     </div>
 
     <!-- Content Section -->
     <div class="content">
         <h2>About This Repository</h2>
-        <p>This repository contains documentation, images, and resources for our 3D and AI integration experiments. Discover how we use AI to enhance 3D animations and renderings in creative ways.</p>
+        <p>This repository contains documentation, images, and resources for my 3D and AI integration experiments. Discover how I use AI to enhance 3D animations and renderings in creative ways.</p>
     </div>
 
 </body>
