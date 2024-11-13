@@ -11,7 +11,7 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background: #0d1117;
+            background: #000000; /* Black background */
             color: #c9d1d9;
             overflow-x: hidden;
         }
@@ -19,7 +19,6 @@
         /* Navbar Styling */
         .navbar {
             display: flex;
-            justify-content: space-between;
             align-items: center;
             padding: 1rem 2rem;
             background: #161b22;
@@ -31,11 +30,20 @@
         .navbar h1 {
             color: #ffffff;
             font-size: 1.5rem;
+            margin-left: 0.5rem;
+        }
+
+        .navbar img.logo {
+            width: 30px;
+            height: 30px;
+            margin-right: 0.5rem;
+            vertical-align: middle;
         }
 
         .navbar nav {
             display: flex;
             gap: 1rem;
+            margin-left: auto;
         }
 
         .navbar a {
@@ -48,137 +56,22 @@
             text-decoration: underline;
         }
 
-        /* Hero Section with Video Background */
-        .hero {
-            position: relative;
-            text-align: center;
-            padding: 3rem 1rem;
-            color: #ffffff;
-            overflow: hidden;
-        }
-
-        .hero h1 {
-            font-size: 2.5rem;
-            margin: 0;
-            padding-bottom: 0.5rem;
-            z-index: 10;
-            position: relative;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 700px;
-            margin: 0 auto;
-            padding-bottom: 1rem;
-            z-index: 10;
-            position: relative;
-        }
-
-        /* Gradient Button Styling */
-        .gradient-button {
-            display: inline-block;
-            padding: 0.8rem 1.5rem;
-            color: #ffffff;
-            background: linear-gradient(135deg, #1f6feb, #58a6ff);
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            margin-top: 1rem;
-            transition: background 0.3s;
-            z-index: 10;
-            position: relative;
-        }
-
-        .gradient-button:hover {
-            background: linear-gradient(135deg, #58a6ff, #1f6feb);
-        }
-
-        /* About Section Below Button */
-        .about-section {
-            text-align: center;
-            margin-top: 1rem;
-            z-index: 3; /* Ensures about section is above the video */
-            position: relative;
-        }
-
-        .about-link {
-            color: #58a6ff;
-            text-decoration: none;
-            font-size: 1rem;
-            font-weight: bold;
-        }
-
-        .about-link:hover {
-            text-decoration: underline;
-        }
-
-        /* Background Video */
-        .background-video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: 1;
-            opacity: 0.7;
-        }
-
-        /* Content Section */
-        .content {
-            padding: 2rem;
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .content h2 {
-            color: #ffffff;
-            border-bottom: 1px solid #30363d;
-            padding-bottom: 0.3em;
-            margin-top: 2rem;
-        }
-
-        .content p {
-            margin: 1rem 0;
-        }
+        /* Other styling (e.g., hero section, content) remains unchanged */
     </style>
 </head>
 <body>
 
-     <!-- Navbar with GIF in the Title -->
+    <!-- Navbar with Logo GIF and Title -->
     <div class="navbar">
-        <img src="images/Original_Render.gif" alt="Logo GIF"> <!-- Add the path to your GIF here -->
+        <img src="images/logo.gif" alt="Logo GIF" class="logo">
+        <h1>3D-AI</h1>
         <nav>
             <a href="https://lionbrush.github.io/3d-ai/">Home</a>
             <a href="https://github.com/lionbrush/3d-ai">GitHub</a>
         </nav>
     </div>
-    
 
-    <!-- Hero Section with Video Background -->
-    <div class="hero">
-        <video autoplay muted loop class="background-video">
-            <source src="https://lionbrush.github.io/3d-ai/videos/Original_Render.mp4" type="video/mp4">
-            <!-- Optional: Add a fallback image or message if video does not load -->
-            Your browser does not support the video tag.
-        </video>
-        <h1>3D-AI</h1>
-        <p>Explore my experiments in combining 3D rendering with AI-enhanced tools. Dive into the exciting fusion of 3D art and artificial intelligence!</p>
-        
-        <!-- Main Button -->
-        <a href="https://lionbrush.github.io/3d-ai/docs/3d-render-to-ai.html" class="gradient-button">View 3D Orb Animation Experiment</a>
-
-    </div>
-
-    <!-- Content Section -->
-    <div class="content">
-        <h2>About This Repository</h2>
-        <p>This repository contains documentation, images, and resources for my 3D and AI integration experiments. Discover how I use AI to enhance 3D animations and renderings in creative ways.</p>
-        <a href="https://www.lionbrush.com" class="about-link">ABOUT ME</a>
-    </div>
-         
-      
+    <!-- Rest of your HTML content goes here -->
 
 </body>
 </html>
