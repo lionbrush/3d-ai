@@ -50,37 +50,16 @@
         .navbar nav {
             display: flex;
             gap: 1rem;
-            align-items: center;
         }
 
-        /* Dropdown Menu Styling */
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #333333;
-            min-width: 200px;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
-
-        .dropdown-content a {
-            color: #ffffff;
-            padding: 12px 16px;
+        .navbar a {
+            color: #58a6ff;
             text-decoration: none;
-            display: block;
+            font-size: 1rem;
         }
 
-        .dropdown-content a:hover {
-            background-color: #575757;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
+        .navbar a:hover {
+            text-decoration: underline;
         }
 
         /* Page Content Styling */
@@ -129,7 +108,8 @@
             min-width: 300px;
             padding: 1rem;
             overflow-y: auto; /* Enable vertical scrolling */
-            max-height: calc(100vh - 200px); /* Match video height */
+            height: auto;
+            max-height: calc(100vh - 200px); /* Adjust height relative to viewport */
         }
 
         .video-container {
@@ -180,7 +160,7 @@
 </head>
 <body>
 
-    <!-- Navbar with Links and Dropdown for Experiments -->
+    <!-- Navbar with Links and "3D-AI" Text -->
     <div class="navbar">
         <div class="logo-container">
             <a href="https://lionbrush.github.io/3d-ai/"> <!-- Link to homepage -->
@@ -190,20 +170,12 @@
         </div>
         <nav>
             <a href="https://lionbrush.github.io/3d-ai/">Home</a>
-            <div class="dropdown">
-                <a href="#">Experiments</a>
-                <div class="dropdown-content">
-                    <a href="experiments.html">Orb Experiment</a>
-                    <a href="#">Future Experiment 1</a>
-                    <a href="#">Future Experiment 2</a>
-                </div>
-            </div>
             <a href="https://github.com/lionbrush/3d-ai/">GitHub</a>
             <a href="https://www.lionbrush.com/">About</a>
         </nav>
     </div>
 
-    <h1>Orb Experiment</h1>
+    <h1>EXPERIMENTS</h1>
 
     <div class="content-container">
         <div class="left-column">
