@@ -90,6 +90,25 @@
             color: #ffffff;
         }
 
+        /* Two-column layout */
+        .content-container {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .left-column {
+            flex: 1;
+            min-width: 300px;
+            padding: 1rem;
+        }
+
+        .right-column {
+            flex: 1;
+            min-width: 300px;
+            padding: 1rem;
+        }
+
         .video-container {
             position: relative;
             width: 100%;
@@ -155,32 +174,31 @@
     </div>
 
     <h1>Exploring AI-Enhanced Video from 3D Orb Animation</h1>
-    
-    <h2>Overview</h2>
-    <p>Hi Everybody!</p>
-    <p>I recently rendered an animation of an orb with particles moving around inside.</p>
-    
-    <div class="video-container" id="video-container">
-        <img class="video-thumbnail" 
-             src="https://raw.githubusercontent.com/lionbrush/3d-ai/refs/heads/main/images/Original_Screenshot_2.jpg" 
-             alt="3D Orb Animation">
-        <button class="play-button" onclick="loadYoutubeVideo()"></button>
+
+    <div class="content-container">
+        <div class="left-column">
+            <div class="video-container" id="video-container">
+                <img class="video-thumbnail" 
+                     src="https://raw.githubusercontent.com/lionbrush/3d-ai/refs/heads/main/images/Original_Screenshot_2.jpg" 
+                     alt="3D Orb Animation">
+                <button class="play-button" onclick="loadYoutubeVideo()"></button>
+            </div>
+        </div>
+        <div class="right-column">
+            <h2>Overview</h2>
+            <p>Hi Everybody!</p>
+            <p>I recently rendered an animation of an orb with particles moving around inside. It seemed like a great video for experimenting with various AI tools. Here's a summary of my journey and findings.</p>
+
+            <h2>Runway Results</h2>
+            <p>I started by testing the video in <strong>Runway</strong>, trying different materials to see what results it could generate. However, some of the outputs were far from ideal, and unfortunately, I ran out of credits before being able to test further. Still, I plan to revisit for improved results if I can.</p>
+
+            <h2>Note on Still Images</h2>
+            <p>Using a still image from the original animation produced notably better results in both <strong>Runway</strong> and <strong>Minimax</strong>. This was an important takeaway that shaped the rest of my experiment.</p>
+
+            <h2>Experimenting with ChatGPT and Midjourney</h2>
+            <p>Since ChatGPT doesn't support video-to-video conversion, I instead used it to generate a prompt based on my original video. Surprisingly, it produced a good starting prompt, which I then entered into <strong>Midjourney</strong>.</p>
+        </div>
     </div>
-    
-    <p>It seemed like a great video for experimenting with various AI tools. Here's a summary of my journey and findings.</p>
-
-    <h2>Runway Results</h2>
-    <p>I started by testing the video in <strong>Runway</strong>, trying different materials to see what results it could generate. 
-    However, some of the outputs were far from ideal, and unfortunately, I ran out of credits before being able to test further. 
-    Still, I plan to revisit for improved results if I can.</p>
-
-    <h2>Note on Still Images</h2>
-    <p>Using a still image from the original animation produced notably better results in both <strong>Runway</strong> and <strong>Minimax</strong>. 
-    This was an important takeaway that shaped the rest of my experiment.</p>
-
-    <h2>Experimenting with ChatGPT and Midjourney</h2>
-    <p>Since ChatGPT doesn't support video-to-video conversion, I instead used it to generate a prompt based on my original video. 
-    Surprisingly, it produced a good starting prompt, which I then entered into <strong>Midjourney</strong>.</p>
 
     <script>
         function loadYoutubeVideo() {
