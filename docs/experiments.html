@@ -77,14 +77,14 @@
             cursor: pointer;
         }
 
-        .thumbnail video {
+        .thumbnail iframe {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            pointer-events: none; /* Prevent clicks from activating the iframe */
         }
 
-        .thumbnail:hover video {
-            play: true;
+        .thumbnail:hover iframe {
+            pointer-events: auto; /* Allow playing on hover */
         }
 
         .thumbnail-text {
@@ -120,10 +120,12 @@
     <div class="gallery-container">
         <!-- Thumbnail 1 -->
         <div class="thumbnail" onclick="showText(1)">
-            <video muted>
-                <source src="path-to-your-video-1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+            <iframe 
+                src="https://www.youtube.com/embed/2qL-rMq01zo?autoplay=0&mute=1&controls=0&showinfo=0"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
         </div>
         <div id="thumbnail-text-1" class="thumbnail-text">
             <h2>Experiment 1: Orb Animation</h2>
@@ -132,10 +134,12 @@
 
         <!-- Thumbnail 2 -->
         <div class="thumbnail" onclick="showText(2)">
-            <video muted>
-                <source src="path-to-your-video-2.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+            <iframe 
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0&mute=1&controls=0&showinfo=0"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
         </div>
         <div id="thumbnail-text-2" class="thumbnail-text">
             <h2>Experiment 2: AI-Enhanced Landscapes</h2>
