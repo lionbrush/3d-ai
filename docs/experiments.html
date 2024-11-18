@@ -75,16 +75,43 @@
             height: 200px;
             overflow: hidden;
             cursor: pointer;
+            background: #1a1a1a;
+        }
+
+        .thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .thumbnail iframe {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
             height: 100%;
-            pointer-events: none; /* Prevent clicks from activating the iframe */
+        }
+
+        .thumbnail:hover img {
+            display: none;
         }
 
         .thumbnail:hover iframe {
-            pointer-events: auto; /* Allow playing on hover */
+            display: block;
+        }
+
+        .experiment-link {
+            display: block;
+            margin-top: 10px;
+            color: #58a6ff;
+            text-decoration: none;
+            text-align: center;
+            font-size: 1rem;
+        }
+
+        .experiment-link:hover {
+            text-decoration: underline;
         }
 
         .thumbnail-text {
@@ -119,31 +146,19 @@
 
     <div class="gallery-container">
         <!-- Thumbnail 1 -->
-        <div class="thumbnail" onclick="showText(1)">
+        <div class="thumbnail">
+            <img src="https://img.youtube.com/vi/2qL-rMq01zo/maxresdefault.jpg" alt="Orb Experiment Thumbnail">
             <iframe 
-                src="https://www.youtube.com/embed/2qL-rMq01zo?autoplay=0&mute=1&controls=0&showinfo=0"
+                src="https://www.youtube.com/embed/2qL-rMq01zo?autoplay=1&mute=1&controls=0&modestbranding=1&showinfo=0"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
             </iframe>
         </div>
+        <a class="experiment-link" onclick="showText(1)">ORB EXPERIMENT</a>
         <div id="thumbnail-text-1" class="thumbnail-text">
             <h2>Experiment 1: Orb Animation</h2>
             <p>This experiment explores the use of particle effects in a 3D orb rendered in Blender.</p>
-        </div>
-
-        <!-- Thumbnail 2 -->
-        <div class="thumbnail" onclick="showText(2)">
-            <iframe 
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0&mute=1&controls=0&showinfo=0"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-        </div>
-        <div id="thumbnail-text-2" class="thumbnail-text">
-            <h2>Experiment 2: AI-Enhanced Landscapes</h2>
-            <p>This experiment uses AI tools to generate dynamic landscapes from still images.</p>
         </div>
 
         <!-- Add more thumbnails as needed -->
