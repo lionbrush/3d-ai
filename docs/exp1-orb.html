@@ -63,7 +63,6 @@
             text-decoration: underline;
         }
 
-        /* Dropdown Menu */
         .dropdown {
             position: relative;
             display: inline-block;
@@ -141,7 +140,7 @@
             position: relative;
             width: 100%;
             height: 0;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            padding-bottom: 56.25%;
             overflow: hidden;
             border: 1px solid #30363d;
             border-radius: 8px;
@@ -155,6 +154,21 @@
             width: 100%;
             height: 100%;
             border: none;
+        }
+
+        .toc {
+            margin-bottom: 20px;
+        }
+
+        .toc a {
+            display: block;
+            margin-bottom: 10px;
+            color: #58a6ff;
+            text-decoration: none;
+        }
+
+        .toc a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -186,7 +200,16 @@
         <!-- Left Column: Text Content -->
         <div class="text-content">
             <h1>Experiment 1 - Orb Animation</h1>
-            <h2>Overview</h2>
+            <div class="toc">
+                <h2>Table of Contents</h2>
+                <a href="#overview">Overview</a>
+                <a href="#runway-results">Runway Results</a>
+                <a href="#chatgpt-midjourney">Experimenting with ChatGPT and Midjourney</a>
+                <a href="#midjourney-results">Results in Midjourney</a>
+                <a href="#key-takeaways">Key Takeaways</a>
+            </div>
+
+            <h2 id="overview">Overview</h2>
             <p>Original Orb Animation</p>
             <p>In Blender, I rendered an animation of an orb with particles moving around inside.</p>
             <a href="https://youtu.be/2qL-rMq01zo" target="_blank">
@@ -194,36 +217,23 @@
             </a>
             <p>It seemed like a great video for experimenting with various AI tools. Here's a summary of my journey and findings:</p>
 
-            <h2>Runway Results</h2>
-            <p>I started by testing the video in <strong>Runway</strong>, trying different materials to see what results it could generate. However, some of the outputs were far from ideal, and unfortunately, I ran out of credits before being able to test further. Still, I plan to revisit it for improved results if I can.</p>
-            <p><strong>Note on Still Images:</strong> Using a still image from the original animation produced notably better results in both <strong>Runway</strong> and <strong>Minimax</strong>. This was an important takeaway that shaped the rest of my experiment.</p>
+            <h2 id="runway-results">Runway Results</h2>
+            <p>...</p>
 
-            <h2>Experimenting with ChatGPT and Midjourney</h2>
-            <p>Since ChatGPT doesn’t support video-to-video conversion, I instead used it to generate a prompt based on my original video. Surprisingly, it produced a good starting prompt, which I then entered into <strong>Midjourney</strong>.</p>
-            <img src="../images/ChatGPT.png" alt="ChatGPT Prompt">
-            <h2>Results in Midjourney</h2>
-            <p>The initial output from Midjourney was intriguing but didn't fully capture the environment I envisioned within the orb. However, by refining the prompt and adding a few keywords, I achieved results that were closer to my vision.</p>
-            <img src="../images/MJ0.png" alt="Midjourney Result 1">
-            <img src="../images/MJ1.png" alt="Midjourney Result 2">
+            <h2 id="chatgpt-midjourney">Experimenting with ChatGPT and Midjourney</h2>
+            <p>...</p>
 
-            <h2>Key Takeaways</h2>
-            <ul>
-                <li><strong>Still Images vs. Videos:</strong> Still images yielded more consistent, high-quality results than video-to-video transformations. AI seems to perform best when given a single frame to work with.</li>
-                <li><strong>Refining Prompts:</strong> Slight adjustments to prompts can significantly influence the output, especially in capturing specific environments or themes.</li>
-                <li><strong>Using 3D Animations as AI Bases:</strong> My 3D animation served as a solid foundation for further experiments in AI video, providing unique starting points for more complex visuals.</li>
-            </ul>
+            <h2 id="midjourney-results">Results in Midjourney</h2>
+            <p>...</p>
+
+            <h2 id="key-takeaways">Key Takeaways</h2>
+            <p>...</p>
         </div>
 
         <!-- Right Column: Video Thumbnail Gallery -->
         <div class="video-gallery">
             <div class="video-thumbnail">
                 <iframe src="https://www.youtube.com/embed/2qL-rMq01zo?autoplay=1&mute=1&loop=1&playlist=2qL-rMq01zo" allow="autoplay; fullscreen"></iframe>
-            </div>
-            <div class="video-thumbnail">
-                <iframe src="https://www.youtube.com/embed/video-id-placeholder?autoplay=1&mute=1&loop=1" allow="autoplay; fullscreen"></iframe>
-            </div>
-            <div class="video-thumbnail">
-                <iframe src="https://www.youtube.com/embed/video-id-placeholder?autoplay=1&mute=1&loop=1" allow="autoplay; fullscreen"></iframe>
             </div>
             <div class="video-thumbnail">
                 <iframe src="https://www.youtube.com/embed/video-id-placeholder?autoplay=1&mute=1&loop=1" allow="autoplay; fullscreen"></iframe>
