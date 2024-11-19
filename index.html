@@ -55,7 +55,36 @@
         .navbar a:hover {
             text-decoration: underline;
         }
+  /* Dropdown Menu */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
 
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #1a1a1a;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+            z-index: 1;
+            min-width: 150px;
+        }
+
+        .dropdown-content a {
+            color: #58a6ff;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #333;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
         /* Hero Section with Fullscreen Video and Centered Content */
         .hero {
             position: relative;
