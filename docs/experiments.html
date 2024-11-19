@@ -82,6 +82,7 @@
             width: 300px;
             height: 200px;
             overflow: hidden;
+            cursor: pointer;
             background: #1a1a1a;
         }
 
@@ -91,37 +92,33 @@
             object-fit: cover;
         }
 
-        .thumbnail iframe {
-            display: none;
+        .popup {
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            bottom: 20px;
+            left: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            color: #ffffff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease-in-out;
         }
 
-        .thumbnail:hover img {
-            display: none;
+        .thumbnail:hover .popup {
+            opacity: 1;
+            pointer-events: auto;
         }
 
-        .thumbnail:hover iframe {
-            display: block;
-        }
-
-        .experiment-links {
-            text-align: center;
-            margin-top: 10px;
-        }
-
-        .experiment-links a {
+        .popup-link {
             display: inline-block;
-            margin: 5px 10px;
+            margin-right: 10px;
             color: #58a6ff;
             text-decoration: none;
-            font-size: 1rem;
         }
 
-        .experiment-links a:hover {
+        .popup-link:hover {
             text-decoration: underline;
         }
 
@@ -159,25 +156,42 @@
     <div class="gallery-container">
         <!-- Thumbnail 1 -->
         <div class="thumbnail">
-            <img src="https://img.youtube.com/vi/2qL-rMq01zo/maxresdefault.jpg" alt="Orb Experiment Thumbnail">
-            <iframe 
-                src="https://www.youtube.com/embed/2qL-rMq01zo?autoplay=1&mute=1&controls=0&modestbranding=1&showinfo=0"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-        </div>
-        <div class="experiment-links">
-            <a href="#" onclick="showText(1)">OVERVIEW</a>
-            <a href="https://www.youtube.com/watch?v=2qL-rMq01zo" target="_blank">LINK TO VIDEO</a>
-            <a href="https://github.com/lionbrush/3d-ai" target="_blank">DETAILS</a>
+            <img src="https://lionbrush.github.io/3d-ai/images/Original_Render.gif" alt="Orb Experiment Thumbnail">
+            <div class="popup">
+                <a class="popup-link" href="#" onclick="showText(1)">OVERVIEW</a>
+                <a class="popup-link" href="https://www.youtube.com/watch?v=2qL-rMq01zo" target="_blank">LINK TO VIDEO</a>
+            </div>
         </div>
         <div id="thumbnail-text-1" class="thumbnail-text">
             <h2>Experiment 1: Orb Animation</h2>
             <p>This experiment explores the use of particle effects in a 3D orb rendered in Blender.</p>
         </div>
 
-        <!-- Add more thumbnails as needed -->
+        <!-- Placeholder Thumbnail 2 -->
+        <div class="thumbnail">
+            <img src="https://via.placeholder.com/300x200.gif" alt="Placeholder Thumbnail 2">
+            <div class="popup">
+                <a class="popup-link" href="#" onclick="showText(2)">OVERVIEW</a>
+                <a class="popup-link" href="#" target="_blank">LINK TO VIDEO</a>
+            </div>
+        </div>
+        <div id="thumbnail-text-2" class="thumbnail-text">
+            <h2>Experiment 2: Placeholder Experiment</h2>
+            <p>This is a placeholder for a future experiment. Details to be added.</p>
+        </div>
+
+        <!-- Placeholder Thumbnail 3 -->
+        <div class="thumbnail">
+            <img src="https://via.placeholder.com/300x200.gif" alt="Placeholder Thumbnail 3">
+            <div class="popup">
+                <a class="popup-link" href="#" onclick="showText(3)">OVERVIEW</a>
+                <a class="popup-link" href="#" target="_blank">LINK TO VIDEO</a>
+            </div>
+        </div>
+        <div id="thumbnail-text-3" class="thumbnail-text">
+            <h2>Experiment 3: Placeholder Experiment</h2>
+            <p>This is a placeholder for another future experiment. Details to be added.</p>
+        </div>
     </div>
 
     <script>
