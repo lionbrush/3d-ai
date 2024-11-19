@@ -174,12 +174,14 @@
             margin-bottom: 1rem;
         }
 
-        .video-gallery {
-            flex: 1;
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 15px;
+       .video-gallery {
+        position: sticky;
+        top: 0;
+        z-index: 5;
+        background-color: #000; /* Ensure the background matches */
+        padding: 10px 0;
         }
+
 
         .video-thumbnail {
             position: relative;
@@ -232,11 +234,10 @@
             <h1>Experiment 1 - Orb Animation</h1>
             <div class="toc">
                 <h2>Table of Contents</h2>
-                <li><a href="#video-gallery">Vide Gallery</a></li>
                 <li><a href="#overview">Overview</a></li>
-                <li><a href="#runway-results">Runway Results</a></li>
-                <li><a href="#chatgpt-midjourney">Experimenting with ChatGPT and Midjourney</a></li>
-                <li><a href="#midjourney-results">Results in Midjourney</a></li>
+                <li><a href="#runway">Runway</a></li>
+                <li><a href="#chatgpt">ChatGPT</a></li>
+                <li><a href="#midjourney">Midjourney</a></li>
                 <li><a href="#key-takeaways">Key Takeaways</a></li>
             </div>
             <h2 id="overview">Overview</h2>
@@ -247,14 +248,14 @@
             </a>
             <p>It seemed like a great video for experimenting with various AI tools. Here's a summary of my journey and findings:</p>
 
-            <h2 id="runway-results">Runway Results</h2>
+            <h2 id="runway">Runway Results</h2>
             <p>I started by testing the video in <strong>Runway</strong>, trying different materials to see what results it could generate. However, some of the outputs were far from ideal, and unfortunately, I ran out of credits before being able to test further. Still, I plan to revisit it for improved results if I can.</p>
             <p><strong>Note on Still Images:</strong> Using a still image from the original animation produced notably better results in both <strong>Runway</strong> and <strong>Minimax</strong>. This was an important takeaway that shaped the rest of my experiment.</p>
 
-            <h2 id="chatgpt-midjourney">Experimenting with ChatGPT and Midjourney</h2>
+            <h2 id="chatgpt">Experimenting with ChatGPT and Midjourney</h2>
             <p>Since ChatGPT doesn’t support video-to-video conversion, I instead used it to generate a prompt based on my original video. Surprisingly, it produced a good starting prompt, which I then entered into <strong>Midjourney</strong>.</p>
             <img src="../images/ChatGPT.png" alt="ChatGPT Prompt">
-            <h2 id="midjourney-results">Results in Midjourney</h2>
+            <h2 id="midjourney">Results in Midjourney</h2>
             <p>The initial output from Midjourney was intriguing but didn't fully capture the environment I envisioned within the orb. However, by refining the prompt and adding a few keywords, I achieved results that were closer to my vision.</p>
             <img src="../images/MJ0.png" alt="Midjourney Result 1">
             <img src="../images/MJ1.png" alt="Midjourney Result 2">
