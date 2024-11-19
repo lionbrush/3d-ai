@@ -32,7 +32,6 @@
         .navbar a {
             color: #58a6ff;
             text-decoration: none;
-            white-space: nowrap;
         }
 
         .navbar a:hover {
@@ -40,16 +39,39 @@
         }
 
         .container {
-            text-align: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 2rem;
             padding: 2rem;
         }
 
+        .text-content {
+            flex: 1;
+            max-width: 50%;
+            overflow-y: auto;
+            max-height: 80vh;
+            padding-right: 1rem;
+            border-right: 1px solid #444;
+        }
+
+        .text-content h2 {
+            margin-top: 2rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .text-content p {
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
         .gallery {
+            flex: 1;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 1rem;
-            margin-bottom: 2rem;
         }
 
         .thumbnail-container {
@@ -85,26 +107,6 @@
         .thumbnail-container:hover iframe {
             display: block;
         }
-
-        h1 {
-            font-size: 2.5rem;
-            font-weight: bold;
-            margin-bottom: 1rem;
-        }
-
-        h2 {
-            font-size: 1.8rem;
-            font-weight: bold;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        p {
-            font-size: 1rem;
-            line-height: 1.6;
-            margin: 0 auto;
-            max-width: 800px;
-        }
     </style>
 </head>
 <body>
@@ -121,9 +123,30 @@
         </nav>
     </header>
 
-    <!-- Video Thumbnail Gallery -->
+    <!-- Content Container -->
     <div class="container">
-        <h1>Experiment 1 - Orb Animation</h1>
+        <!-- Text Section -->
+        <div class="text-content">
+            <h1>Experiment 1 - Orb Animation</h1>
+            <h2>Overview</h2>
+            <p>Original Orb Animation</p>
+            <p>In Blender, I rendered an animation of an orb with particles moving around inside.</p>
+            <p>It seemed like a great video for experimenting with various AI tools. Here's a summary of my journey and findings:</p>
+            <h2>Runway Results</h2>
+            <p>I started by testing the video in <strong>Runway</strong>, trying different materials to see what results it could generate...</p>
+            <h2>Experimenting with ChatGPT and Midjourney</h2>
+            <p>Since ChatGPT doesn’t support video-to-video conversion, I instead used it to generate a prompt based on my original video...</p>
+            <h2>Key Takeaways</h2>
+            <p>1. <strong>Still Images vs. Videos:</strong> Still images yielded more consistent, high-quality results than video-to-video transformations...</p>
+            <p>2. <strong>Refining Prompts:</strong> Slight adjustments to prompts can significantly influence the output...</p>
+            <p>3. <strong>Using 3D Animations as AI Bases:</strong> My 3D animation served as a solid foundation for further experiments...</p>
+            <h2>Next Steps: Exploring Orbs with Pirate Ships</h2>
+            <p>Inspired by these experiments, I began testing the orb environment with pirate ships...</p>
+            <h2>Final Thoughts</h2>
+            <p>The rapid pace of AI model improvements is exhilarating but also costly...</p>
+        </div>
+
+        <!-- Video Thumbnail Gallery -->
         <div class="gallery">
             <!-- Orb Animation Thumbnail -->
             <div class="thumbnail-container">
@@ -147,20 +170,7 @@
             <div class="thumbnail-container">
                 <img src="https://via.placeholder.com/200x112" alt="Video 5">
             </div>
-            <div class="thumbnail-container">
-                <img src="https://via.placeholder.com/200x112" alt="Video 6">
-            </div>
         </div>
-
-        <!-- Experiment Content -->
-        <h2>Overview</h2>
-        <p>Original Orb Animation: In Blender, I rendered an animation of an orb with particles moving around inside.</p>
-        <p>It seemed like a great video for experimenting with various AI tools. Here's a summary of my journey and findings:</p>
-
-        <h2>Runway Results</h2>
-        <p>I started by testing the video in <strong>Runway</strong>, trying different materials to see what results it could generate...</p>
-
-        <!-- Add more content as needed -->
     </div>
 </body>
 </html>
