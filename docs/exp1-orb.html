@@ -5,23 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experiment 1 - Orb Animation</title>
     <style>
+        /* General Styling */
         body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            background: #000000;
+            color: #c9d1d9;
             margin: 0;
-            font-family: Arial, sans-serif;
-            color: #ffffff;
-            background-color: #000000;
+            padding: 0;
         }
 
+        /* Navbar Styling */
         .navbar {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 1rem 2rem;
-            background: #000;
+            background: #000000;
             position: sticky;
             top: 0;
             width: 100%;
             z-index: 10;
+            box-sizing: border-box;
+        }
+
+        .navbar .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .navbar .logo-container img {
+            width: 30px;
+            height: 30px;
+            margin-right: 0.5rem;
+            vertical-align: middle;
+        }
+
+        .navbar .logo-container span {
+            color: #ffffff;
+            font-size: 1.5rem;
+            font-weight: bold;
+            vertical-align: middle;
         }
 
         .navbar nav {
@@ -35,63 +60,95 @@
         }
 
         .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Dropdown Menu */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #1a1a1a;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+            z-index: 1;
+            min-width: 150px;
+        }
+
+        .dropdown-content a {
+            color: #58a6ff;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #333;
             color: #ffffff;
         }
 
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Two-Column Layout */
         .container {
             display: flex;
-            flex-direction: row;
-            justify-content: center;
-            gap: 2rem;
-            padding: 2rem;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
         }
 
         .text-content {
-            flex: 1;
-            max-width: 50%;
-            overflow-y: auto;
+            flex: 2;
             max-height: 80vh;
-            padding-right: 1rem;
-            border-right: 1px solid #444;
+            overflow-y: auto;
+            padding-right: 20px;
         }
 
-        .text-content h2 {
-            margin-top: 2rem;
-            font-size: 1.5rem;
-            font-weight: bold;
+        .text-content h1, .text-content h2, .text-content h3 {
+            color: #ffffff;
         }
 
-        .text-content p {
-            line-height: 1.6;
+        .text-content a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+
+        .text-content a:hover {
+            text-decoration: underline;
+        }
+
+        .text-content img {
+            max-width: 100%;
+            height: auto;
             margin-bottom: 1rem;
         }
 
-        .gallery {
+        .video-gallery {
             flex: 1;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 1rem;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
         }
 
-        .thumbnail-container {
+        .video-thumbnail {
             position: relative;
-            width: 200px;
-            height: 112px;
-            background-color: #000;
-            overflow: hidden;
-            border: 2px solid #444;
-            border-radius: 8px;
-        }
-
-        .thumbnail-container img {
             width: 100%;
-            height: auto;
-            cursor: pointer;
+            height: 0;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            overflow: hidden;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            background: #000000;
         }
 
-        .thumbnail-container iframe {
-            display: none;
+        .video-thumbnail iframe {
             position: absolute;
             top: 0;
             left: 0;
@@ -99,76 +156,77 @@
             height: 100%;
             border: none;
         }
-
-        .thumbnail-container:hover img {
-            display: none;
-        }
-
-        .thumbnail-container:hover iframe {
-            display: block;
-        }
     </style>
 </head>
 <body>
+
     <!-- Navbar -->
-    <header class="navbar">
-        <div>
-            <a href="index.html" class="logo">3D-AI</a>
+    <div class="navbar">
+        <div class="logo-container">
+            <a href="https://lionbrush.github.io/3d-ai/">
+                <img src="https://lionbrush.github.io/3d-ai/images/Original_Render.gif" alt="Logo GIF">
+            </a>
+            <span>3D-AI</span>
         </div>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="experiments.html">Experiments</a>
-            <a href="https://github.com/lionbrush/3d-ai" target="_blank">GitHub</a>
-            <a href="#about">About</a>
+            <a href="https://lionbrush.github.io/3d-ai/">Home</a>
+            <div class="dropdown">
+                <a href="experiments.html">Experiments</a>
+                <div class="dropdown-content">
+                    <a href="exp1-orb.html">#1 - ORB</a>
+                </div>
+            </div>
+            <a href="https://github.com/lionbrush/3d-ai/" target="_blank">GitHub</a>
+            <a href="https://lionbrush.com/">About</a>
         </nav>
-    </header>
+    </div>
 
-    <!-- Content Container -->
+    <!-- Main Content -->
     <div class="container">
-        <!-- Text Section -->
+        <!-- Left Column: Text Content -->
         <div class="text-content">
             <h1>Experiment 1 - Orb Animation</h1>
             <h2>Overview</h2>
             <p>Original Orb Animation</p>
             <p>In Blender, I rendered an animation of an orb with particles moving around inside.</p>
+            <a href="https://youtu.be/2qL-rMq01zo" target="_blank">
+                <img src="/images/Original_Screenshot_2.jpg" alt="3D Orb Animation Render">
+            </a>
             <p>It seemed like a great video for experimenting with various AI tools. Here's a summary of my journey and findings:</p>
+
             <h2>Runway Results</h2>
-            <p>I started by testing the video in <strong>Runway</strong>, trying different materials to see what results it could generate...</p>
+            <p>I started by testing the video in <strong>Runway</strong>, trying different materials to see what results it could generate. However, some of the outputs were far from ideal, and unfortunately, I ran out of credits before being able to test further. Still, I plan to revisit it for improved results if I can.</p>
+            <p><strong>Note on Still Images:</strong> Using a still image from the original animation produced notably better results in both <strong>Runway</strong> and <strong>Minimax</strong>. This was an important takeaway that shaped the rest of my experiment.</p>
+
             <h2>Experimenting with ChatGPT and Midjourney</h2>
-            <p>Since ChatGPT doesn’t support video-to-video conversion, I instead used it to generate a prompt based on my original video...</p>
+            <p>Since ChatGPT doesn’t support video-to-video conversion, I instead used it to generate a prompt based on my original video. Surprisingly, it produced a good starting prompt, which I then entered into <strong>Midjourney</strong>.</p>
+            <img src="/images/ChatGPT.png" alt="ChatGPT Prompt">
+            <h2>Results in Midjourney</h2>
+            <p>The initial output from Midjourney was intriguing but didn't fully capture the environment I envisioned within the orb. However, by refining the prompt and adding a few keywords, I achieved results that were closer to my vision.</p>
+            <img src="/images/MJ0.png" alt="Midjourney Result 1">
+            <img src="/images/MJ1.png" alt="Midjourney Result 2">
+
             <h2>Key Takeaways</h2>
-            <p>1. <strong>Still Images vs. Videos:</strong> Still images yielded more consistent, high-quality results than video-to-video transformations...</p>
-            <p>2. <strong>Refining Prompts:</strong> Slight adjustments to prompts can significantly influence the output...</p>
-            <p>3. <strong>Using 3D Animations as AI Bases:</strong> My 3D animation served as a solid foundation for further experiments...</p>
-            <h2>Next Steps: Exploring Orbs with Pirate Ships</h2>
-            <p>Inspired by these experiments, I began testing the orb environment with pirate ships...</p>
-            <h2>Final Thoughts</h2>
-            <p>The rapid pace of AI model improvements is exhilarating but also costly...</p>
+            <ul>
+                <li><strong>Still Images vs. Videos:</strong> Still images yielded more consistent, high-quality results than video-to-video transformations. AI seems to perform best when given a single frame to work with.</li>
+                <li><strong>Refining Prompts:</strong> Slight adjustments to prompts can significantly influence the output, especially in capturing specific environments or themes.</li>
+                <li><strong>Using 3D Animations as AI Bases:</strong> My 3D animation served as a solid foundation for further experiments in AI video, providing unique starting points for more complex visuals.</li>
+            </ul>
         </div>
 
-        <!-- Video Thumbnail Gallery -->
-        <div class="gallery">
-            <!-- Orb Animation Thumbnail -->
-            <div class="thumbnail-container">
-                <img src="https://img.youtube.com/vi/2qL-rMq01zo/0.jpg" alt="Orb Animation Thumbnail">
-                <iframe 
-                    src="https://www.youtube.com/embed/2qL-rMq01zo?autoplay=1&mute=1&controls=0&modestbranding=1&loop=1&playlist=2qL-rMq01zo" 
-                    allow="autoplay; encrypted-media; loop; muted" 
-                    allowfullscreen>
-                </iframe>
+        <!-- Right Column: Video Thumbnail Gallery -->
+        <div class="video-gallery">
+            <div class="video-thumbnail">
+                <iframe src="https://www.youtube.com/embed/2qL-rMq01zo?autoplay=1&mute=1&loop=1&playlist=2qL-rMq01zo" allow="autoplay; fullscreen"></iframe>
             </div>
-            <!-- Placeholder Thumbnails -->
-            <div class="thumbnail-container">
-                <img src="https://via.placeholder.com/200x112" alt="Video 2">
+            <div class="video-thumbnail">
+                <iframe src="https://www.youtube.com/embed/video-id-placeholder?autoplay=1&mute=1&loop=1" allow="autoplay; fullscreen"></iframe>
             </div>
-            <div class="thumbnail-container">
-                <img src="https://via.placeholder.com/200x112" alt="Video 3">
+            <div class="video-thumbnail">
+                <iframe src="https://www.youtube.com/embed/video-id-placeholder?autoplay=1&mute=1&loop=1" allow="autoplay; fullscreen"></iframe>
             </div>
-            <div class="thumbnail-container">
-                <img src="https://via.placeholder.com/200x112" alt="Video 4">
-            </div>
-            <div class="thumbnail-container">
-                <img src="https://via.placeholder.com/200x112" alt="Video 5">
+            <div class="video-thumbnail">
+                <iframe src="https://www.youtube.com/embed/video-id-placeholder?autoplay=1&mute=1&loop=1" allow="autoplay; fullscreen"></iframe>
             </div>
         </div>
     </div>
