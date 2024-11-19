@@ -5,6 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experiment 1 - Orb Animation</title>
     <style>
+        /* Mobile responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .text-content, .video-gallery {
+        flex: none;
+        width: 100%;
+        max-height: auto;
+    }
+
+    .video-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .toc {
+        margin-bottom: 20px;
+    }
+
+    .toc a {
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+
+    .text-content h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+
         /* General Styling */
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
