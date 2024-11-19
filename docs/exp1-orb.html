@@ -5,50 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experiment 1 - Orb Animation</title>
     <style>
-        /* Mobile responsiveness */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .navbar nav {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        width: 100%;
-    }
-
-    .container {
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    .text-content, .video-gallery {
-        flex: none;
-        width: 100%;
-        max-height: auto;
-    }
-
-    .video-gallery {
-        grid-template-columns: 1fr;
-    }
-
-    .toc {
-        margin-bottom: 20px;
-    }
-
-    .toc a {
-        margin-bottom: 5px;
-        font-size: 14px;
-    }
-
-    .text-content h1 {
-        font-size: 1.5rem;
-        text-align: center;
-    }
-}
-
         /* General Styling */
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
@@ -174,14 +130,12 @@
             margin-bottom: 1rem;
         }
 
-       .video-gallery {
-        position: sticky;
-        top: 0;
-        z-index: 5;
-        background-color: #000; /* Ensure the background matches */
-        padding: 10px 0;
+        .video-gallery {
+            flex: 1;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
         }
-
 
         .video-thumbnail {
             position: relative;
@@ -234,6 +188,7 @@
             <h1>Experiment 1 - Orb Animation</h1>
             <div class="toc">
                 <h2>Table of Contents</h2>
+                <li><a href="#video-gallery">Results</a></li>
                 <li><a href="#overview">Overview</a></li>
                 <li><a href="#runway">Runway</a></li>
                 <li><a href="#chatgpt">ChatGPT</a></li>
@@ -248,14 +203,14 @@
             </a>
             <p>It seemed like a great video for experimenting with various AI tools. Here's a summary of my journey and findings:</p>
 
-            <h2 id="runway">Runway Results</h2>
+            <h2 id="runway">Runway</h2>
             <p>I started by testing the video in <strong>Runway</strong>, trying different materials to see what results it could generate. However, some of the outputs were far from ideal, and unfortunately, I ran out of credits before being able to test further. Still, I plan to revisit it for improved results if I can.</p>
             <p><strong>Note on Still Images:</strong> Using a still image from the original animation produced notably better results in both <strong>Runway</strong> and <strong>Minimax</strong>. This was an important takeaway that shaped the rest of my experiment.</p>
 
-            <h2 id="chatgpt">Experimenting with ChatGPT and Midjourney</h2>
+            <h2 id="chatgpt">ChatGPT</h2>
             <p>Since ChatGPT doesn’t support video-to-video conversion, I instead used it to generate a prompt based on my original video. Surprisingly, it produced a good starting prompt, which I then entered into <strong>Midjourney</strong>.</p>
             <img src="../images/ChatGPT.png" alt="ChatGPT Prompt">
-            <h2 id="midjourney">Results in Midjourney</h2>
+            <h2 id="midjourney">Midjourney</h2>
             <p>The initial output from Midjourney was intriguing but didn't fully capture the environment I envisioned within the orb. However, by refining the prompt and adding a few keywords, I achieved results that were closer to my vision.</p>
             <img src="../images/MJ0.png" alt="Midjourney Result 1">
             <img src="../images/MJ1.png" alt="Midjourney Result 2">
@@ -269,7 +224,7 @@
         </div>
 
         <!-- Right Column: Video Thumbnail Gallery -->
-        <div class="video-gallery" class="video-gallery">
+        <div id="video-gallery" class="video-gallery">
             <div class="video-thumbnail">
                 <iframe src="https://www.youtube.com/embed/2qL-rMq01zo?autoplay=1&mute=1&loop=1&playlist=2qL-rMq01zo" allow="autoplay; fullscreen"></iframe>
             </div>
