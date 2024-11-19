@@ -29,21 +29,28 @@
             box-sizing: border-box;
         }
 
-        .navbar .logo-container {
+         .navbar .logo-container {
             display: flex;
             align-items: center;
+            justify-content: center; /* Ensures horizontal alignment */
         }
 
         .navbar .logo-container img {
             width: 30px;
             height: 30px;
             margin-right: 0.5rem;
+            vertical-align: middle; /* Ensures the image aligns with the middle of the text */
+            display: inline-block; /* Prevents any extra space */
         }
 
         .navbar .logo-container span {
             color: #ffffff;
             font-size: 1.5rem;
             font-weight: bold;
+            vertical-align: middle; /* Ensures the text aligns with the middle of the image */
+            display: inline-block; /* Keeps both elements in sync */
+            font-size: 1.5rem; /* Optional: Adjust font size */
+            line-height: 1; /* Removes any extra spacing */
         }
 
         .navbar nav {
