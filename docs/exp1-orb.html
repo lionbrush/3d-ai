@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experiment 1: Orb Animation</title>
     <style>
+        /* General Styling */
         body {
-            font-family: Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
             background: #000000;
             color: #c9d1d9;
@@ -14,50 +15,169 @@
             padding: 20px;
         }
 
-        h1, h2, h3 {
-            color: #ffffff;
+        /* Navbar Styling */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: #000000;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+            box-sizing: border-box;
         }
 
-        a {
+        .navbar .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .logo-container img {
+            width: 30px;
+            height: 30px;
+            margin-right: 0.5rem;
+        }
+
+        .navbar .logo-container span {
+            color: #ffffff;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .navbar nav {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .navbar a {
             color: #58a6ff;
             text-decoration: none;
         }
 
-        a:hover {
+        .navbar a:hover {
             text-decoration: underline;
         }
 
+        /* Dropdown Menu */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #1a1a1a;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+            z-index: 1;
+            min-width: 150px;
+        }
+
+        .dropdown-content a {
+            color: #58a6ff;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #333;
+            color: #ffffff;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Content Styling */
+        .content {
+            max-width: 800px;
+            margin: 40px auto;
+        }
+
         .content img {
-            max-width: 100%;
+            width: 100%;
+            max-width: 600px;
             height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .content h1, .content h2, .content h3 {
+            color: #ffffff;
+        }
+
+        .content a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+
+        .content a:hover {
+            text-decoration: underline;
+        }
+
+        .content p {
             margin: 20px 0;
         }
     </style>
 </head>
 <body>
-    <h1>Experiment 1: Orb Animation</h1>
 
-    <div class="content">
-        <h2>Overview</h2>
-        <p>Hi Everybody!</p>
-        <p>
-            I recently rendered an animation of an orb with particles moving around inside.
-            <a href="https://youtu.be/2qL-rMq01zo">
-                <img src="/images/Original_Screenshot_2.jpg" alt="3D Orb Animation Render">
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="https://lionbrush.github.io/3d-ai/images/Original_Render.gif" alt="Logo GIF">
             </a>
-        </p>
+            <span>3D-AI</span>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a href="experiments.html">Experiments</a>
+                <div class="dropdown-content">
+                    <a href="exp1-orb.html">#1 - ORB</a>
+                </div>
+            </div>
+            <a href="https://github.com/lionbrush/3d-ai/" target="_blank">GitHub</a>
+            <a href="https://lionbrush.com/">About</a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h1>Experiment 1: Orb Animation</h1>
+
+        <h2>Overview</h2>
         <p>
+            Hi Everybody! I recently rendered an animation of an orb with particles moving around inside. 
+            <a href="https://youtu.be/2qL-rMq01zo">
+                <img src="https://lionbrush.github.io/3d-ai/images/Original_Screenshot_2.jpg" alt="3D Orb Animation Render">
+            </a>
             It seemed like a great video for experimenting with various AI tools. Here's a summary of my journey and findings.
         </p>
 
         <h3>Runway Results</h3>
-        <p>[Details from markdown...]</p>
+        <p>
+            I started by testing the video in <strong>Runway</strong>, trying different materials to see what results it could generate. However, some of the outputs were far from ideal, and unfortunately, I ran out of credits before being able to test further. Still, I plan to revisit it for improved results if I can.
+        </p>
+        <img src="https://lionbrush.github.io/3d-ai/images/ChatGPT.png" alt="ChatGPT Prompt">
 
         <h3>Key Takeaways</h3>
-        <p>[Details from markdown...]</p>
+        <p>
+            <strong>1.</strong> Still images yielded more consistent, high-quality results than video-to-video transformations.<br>
+            <strong>2.</strong> Slight adjustments to prompts can significantly influence the output.<br>
+            <strong>3.</strong> Using 3D animations as AI bases provides unique starting points for experiments.
+        </p>
 
         <h3>Final Thoughts</h3>
-        <p>[Details from markdown...]</p>
+        <p>
+            The rapid pace of AI model improvements is exhilarating but also costly. Subscriptions add up, and new tools appear almost daily. This project has been a fun (and sometimes frustrating) dive into the potential of AI in animation!
+        </p>
     </div>
+
 </body>
 </html>
