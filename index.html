@@ -7,34 +7,24 @@
     <style>
         /* Mobile-Only Styling for Header */
 @media (max-width: 768px) {
-/* Navbar Styling for Mobile */
-.navbar {
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: flex-start; /* Align items to the left */
-    padding: 1rem; /* Add padding for better spacing */
-}
+    .navbar {
+        flex-wrap: wrap; /* Allow wrapping on smaller screens */
+        justify-content: center;
+        text-align: center; /* Center the navbar items */
+    }
 
-.navbar nav {
-    display: flex;
-    flex-direction: column; /* Stack links vertically */
-    width: 100%; /* Take up the full width */
-}
+    .navbar nav {
+        flex-direction: column; /* Stack links vertically */
+        gap: 0.5rem;
+    }
 
-.navbar nav a {
-    margin: 0.5rem 0; /* Add spacing between links */
-    text-align: left; /* Align text to the left */
-    color: #58a6ff;
-    text-decoration: none;
-}
+    .navbar .logo-container {
+        margin-bottom: 1rem; /* Add spacing between logo and links */
+    }
+        .description {
+        margin-top: 2rem; /* More spacing for smaller screens */
+    }
 
-.navbar nav a:hover {
-    text-decoration: underline;
-}
-
-/* Fix overlapping and ensure clickability */
-.navbar .logo-container {
-    margin-bottom: 1rem; /* Add space between logo and links */
 }
         /* General Styling */
         body {
@@ -158,7 +148,6 @@
             margin-top: 1rem;
             transition: background 0.3s;
             z-index: 10;
-            margin-bottom: 2rem; /* Add spacing below the button */
         }
 
         .gradient-button:hover {
@@ -197,8 +186,18 @@
         }
 
         .description {
-        margin-top: 2.5rem; /* Adjusts the spacing above the text */
+        margin-top: 1.5rem; /* Adjusts the spacing above the text */
         }
+
+    footer {
+    position: relative;
+    margin-top: 3rem;
+    padding: 1rem 0;
+    text-align: center;
+    background: #000000;
+    color: #58a6ff;
+    font-size: 1rem;
+    }
 
     </style>
 </head>
@@ -237,12 +236,12 @@
         <!-- Main Button -->
         <a href="https://lionbrush.github.io/3d-ai/docs/experiments.html" class="gradient-button">EXPERIMENTS</a>
         <p class="description">I’m an artist & technologist exploring the fusion of 3D animation, VFX, & AI. Dive into my experiments to see where creativity meets innovation.</p>
-    <h2 style="text-align: center; padding: 1rem 0; background: #000000; color: #58a6ff; font-size: 1rem; position: relative; bottom: 0; width: 100%;">
+    </div>
+    <footer style="text-align: center; padding: 1rem 0; background: #000000; color: #58a6ff; font-size: 1rem; position: relative; bottom: 0; width: 100%;">
     <p>
         VISIT MY MAIN SITE @ <a href="https://www.lionbrush.com" target="_blank" style="color: #58a6ff; text-decoration: none;">LIONBRUSH.COM</a>
     </p>
-    </h2>
-    </div>
+</footer>
 
 </body>
 </html>
