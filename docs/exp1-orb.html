@@ -5,17 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experiment 1 - Orb Animation</title>
     <style>
-        /* General Styling */
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background: #000;
-            color: #c9d1d9;
             margin: 0;
-            padding: 0;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            background-color: #000000;
         }
 
-        /* Navbar Styling */
         .navbar {
             display: flex;
             justify-content: space-between;
@@ -28,23 +24,6 @@
             z-index: 10;
         }
 
-        .navbar .logo-container {
-            display: flex;
-            align-items: center;
-        }
-
-        .navbar .logo-container img {
-            width: 30px;
-            height: 30px;
-            margin-right: 0.5rem;
-        }
-
-        .navbar .logo-container span {
-            color: #ffffff;
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-
         .navbar nav {
             display: flex;
             gap: 1.5rem;
@@ -53,169 +32,135 @@
         .navbar a {
             color: #58a6ff;
             text-decoration: none;
+            white-space: nowrap;
         }
 
         .navbar a:hover {
-            text-decoration: underline;
+            color: #ffffff;
         }
 
-        .dropdown {
+        .container {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .thumbnail-container {
             position: relative;
-            display: inline-block;
+            width: 200px;
+            height: 112px;
+            background-color: #000;
+            overflow: hidden;
+            border: 2px solid #444;
+            border-radius: 8px;
         }
 
-        .dropdown-content {
+        .thumbnail-container img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+        }
+
+        .thumbnail-container iframe {
             display: none;
             position: absolute;
-            background-color: #000;
-            min-width: 150px;
-            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        .dropdown-content a {
-            color: #58a6ff;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #30363d;
-        }
-
-        /* Video Thumbnail Gallery */
-        .video-gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-            gap: 20px;
-            padding: 20px;
-            margin: 0 auto;
-            max-width: 800px;
-        }
-
-        .thumbnail {
-            position: relative;
-            overflow: hidden;
-            cursor: pointer;
-            border-radius: 10px;
-        }
-
-        .thumbnail iframe {
-            display: block;
+            top: 0;
+            left: 0;
             width: 100%;
             height: 100%;
             border: none;
-            pointer-events: none;
         }
 
-        .thumbnail iframe:hover {
-            pointer-events: auto;
+        .thumbnail-container:hover img {
+            display: none;
         }
 
-        /* Content Styling */
-        .content {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-        }
-
-        .content h1, .content h2 {
-            color: #ffffff;
-            text-align: center;
-        }
-
-        .content p {
-            margin: 20px 0;
-        }
-
-        .content img {
+        .thumbnail-container:hover iframe {
             display: block;
-            max-width: 100%;
-            height: auto;
-            margin: 20px auto;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin: 0 auto;
+            max-width: 800px;
         }
     </style>
 </head>
 <body>
-
     <!-- Navbar -->
-    <div class="navbar">
-        <div class="logo-container">
-            <a href="https://lionbrush.github.io/3d-ai/">
-                <img src="https://lionbrush.github.io/3d-ai/images/Original_Render.gif" alt="Logo GIF">
-            </a>
-            <span>3D-AI</span>
+    <header class="navbar">
+        <div>
+            <a href="index.html" class="logo">3D-AI</a>
         </div>
         <nav>
-            <a href="https://lionbrush.github.io/3d-ai/">Home</a>
-            <div class="dropdown">
-                <a href="#">Experiments</a>
-                <div class="dropdown-content">
-                    <a href="exp1-orb.html">#1 - ORB</a>
-                </div>
-            </div>
-            <a href="https://github.com/lionbrush/3d-ai/" target="_blank">GitHub</a>
-            <a href="https://lionbrush.com/">About</a>
+            <a href="index.html">Home</a>
+            <a href="experiments.html">Experiments</a>
+            <a href="https://github.com/lionbrush/3d-ai" target="_blank">GitHub</a>
+            <a href="#about">About</a>
         </nav>
-    </div>
+    </header>
 
     <!-- Video Thumbnail Gallery -->
-    <div class="video-gallery">
-        <div class="thumbnail">
-            <iframe 
-                src="https://www.youtube.com/embed/2qL-rMq01zo?autoplay=1&mute=1&controls=0&modestbranding=1&loop=1&playlist=2qL-rMq01zo" 
-                allow="autoplay; encrypted-media; loop; muted" 
-                allowfullscreen>
-            </iframe>
-        </div>
-        <!-- Placeholder Thumbnails -->
-        <div class="thumbnail">
-            <iframe 
-                src="https://www.youtube.com/embed/example-video-id?autoplay=1&mute=1&controls=0&modestbranding=1&loop=1&playlist=example-video-id" 
-                allow="autoplay; encrypted-media; loop; muted" 
-                allowfullscreen>
-            </iframe>
-        </div>
-        <div class="thumbnail">
-            <iframe 
-                src="https://www.youtube.com/embed/example-video-id?autoplay=1&mute=1&controls=0&modestbranding=1&loop=1&playlist=example-video-id" 
-                allow="autoplay; encrypted-media; loop; muted" 
-                allowfullscreen>
-            </iframe>
-        </div>
-        <div class="thumbnail">
-            <iframe 
-                src="https://www.youtube.com/embed/example-video-id?autoplay=1&mute=1&controls=0&modestbranding=1&loop=1&playlist=example-video-id" 
-                allow="autoplay; encrypted-media; loop; muted" 
-                allowfullscreen>
-            </iframe>
-        </div>
-        <div class="thumbnail">
-            <iframe 
-                src="https://www.youtube.com/embed/example-video-id?autoplay=1&mute=1&controls=0&modestbranding=1&loop=1&playlist=example-video-id" 
-                allow="autoplay; encrypted-media; loop; muted" 
-                allowfullscreen>
-            </iframe>
-        </div>
-    </div>
-
-    <!-- Main Content -->
-    <div class="content">
+    <div class="container">
         <h1>Experiment 1 - Orb Animation</h1>
-        <h2>Overview</h2>
-        <p>
-            Original Orb Animation: In Blender, I rendered an animation of an orb with particles moving around inside.
-            <a href="https://youtu.be/2qL-rMq01zo">
-                <img src="https://lionbrush.github.io/3d-ai/images/Original_Screenshot_2.jpg" alt="3D Orb Animation Render">
-            </a>
-        </p>
-        <!-- Additional content below -->
-    </div>
+        <div class="gallery">
+            <!-- Orb Animation Thumbnail -->
+            <div class="thumbnail-container">
+                <img src="https://img.youtube.com/vi/2qL-rMq01zo/0.jpg" alt="Orb Animation Thumbnail">
+                <iframe 
+                    src="https://www.youtube.com/embed/2qL-rMq01zo?autoplay=1&mute=1&controls=0&modestbranding=1&loop=1&playlist=2qL-rMq01zo" 
+                    allow="autoplay; encrypted-media; loop; muted" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <!-- Placeholder Thumbnails -->
+            <div class="thumbnail-container">
+                <img src="https://via.placeholder.com/200x112" alt="Video 2">
+            </div>
+            <div class="thumbnail-container">
+                <img src="https://via.placeholder.com/200x112" alt="Video 3">
+            </div>
+            <div class="thumbnail-container">
+                <img src="https://via.placeholder.com/200x112" alt="Video 4">
+            </div>
+            <div class="thumbnail-container">
+                <img src="https://via.placeholder.com/200x112" alt="Video 5">
+            </div>
+            <div class="thumbnail-container">
+                <img src="https://via.placeholder.com/200x112" alt="Video 6">
+            </div>
+        </div>
 
+        <!-- Experiment Content -->
+        <h2>Overview</h2>
+        <p>Original Orb Animation: In Blender, I rendered an animation of an orb with particles moving around inside.</p>
+        <p>It seemed like a great video for experimenting with various AI tools. Here's a summary of my journey and findings:</p>
+
+        <h2>Runway Results</h2>
+        <p>I started by testing the video in <strong>Runway</strong>, trying different materials to see what results it could generate...</p>
+
+        <!-- Add more content as needed -->
+    </div>
 </body>
 </html>
