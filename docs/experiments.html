@@ -136,8 +136,9 @@
 
         .popup {
             position: absolute;
-            bottom: 10px;
-            left: 10px;
+            top: 50%;
+            bottom: 50%;
+            transform: translate(-50%, -50%);
             background: rgba(0, 0, 0, 0.8);
             color: #ffffff;
             padding: 5px 10px;
@@ -145,9 +146,14 @@
             font-size: 0.8rem;
             opacity: 0;
             pointer-events: none;
-            transition: opacity 0.3s ease-in-out;
+            transition: opacity 0.3s ease-in-out, background-color 0.3s ease;
         }
-
+       
+        .thumbnail:hover {
+            background-color: rgba(88, 166, 255, 0.2); /* Light blue overlay */
+            transition: background-color 0.3s ease-in-out;
+        }
+        
         .thumbnail:hover .popup {
             opacity: 1;
             pointer-events: auto;
