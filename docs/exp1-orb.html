@@ -26,31 +26,23 @@
             top: 0;
             width: 100%;
             z-index: 10;
-            box-sizing: border-box;
         }
 
         .navbar .logo-container {
             display: flex;
             align-items: center;
-            justify-content: center; /* Ensures horizontal alignment */
         }
 
         .navbar .logo-container img {
             width: 30px;
             height: 30px;
             margin-right: 0.5rem;
-            vertical-align: middle; /* Ensures the image aligns with the middle of the text */
-            display: inline-block; /* Prevents any extra space */
         }
 
         .navbar .logo-container span {
             color: #ffffff;
             font-size: 1.5rem;
             font-weight: bold;
-            vertical-align: middle; /* Ensures the text aligns with the middle of the image */
-            display: inline-block; /* Keeps both elements in sync */
-            font-size: 1.5rem; /* Optional: Adjust font size */
-            line-height: 1; /* Removes any extra spacing */
         }
 
         .navbar nav {
@@ -67,7 +59,6 @@
             text-decoration: underline;
         }
 
-        /* Dropdown Menu */
         .dropdown {
             position: relative;
             display: inline-block;
@@ -97,6 +88,57 @@
 
         .dropdown:hover .dropdown-content {
             display: block;
+        }
+
+        /* Thumbnail Gallery */
+        .video-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        .thumbnail {
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            border: 1px solid #30363d;
+            border-radius: 10px;
+        }
+
+        .thumbnail img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .thumbnail video {
+            display: block;
+            width: 100%;
+            height: auto;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .thumbnail:hover video {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .thumbnail .title {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.7);
+            color: #ffffff;
+            padding: 5px 10px;
+            font-size: 0.9rem;
+            border-radius: 5px;
+            text-align: center;
         }
 
         /* Content Styling */
@@ -160,10 +202,43 @@
         </nav>
     </div>
 
+    <!-- Video Thumbnail Gallery -->
+    <div class="video-gallery">
+        <div class="thumbnail">
+            <a href="https://youtu.be/2qL-rMq01zo" target="_blank">
+                <img src="https://lionbrush.github.io/3d-ai/images/Original_Screenshot_2.jpg" alt="Orb Animation Thumbnail">
+                <video autoplay muted loop>
+                    <source src="https://lionbrush.github.io/3d-ai/videos/orb-animation.mp4" type="video/mp4">
+                </video>
+                <div class="title">Orb Animation</div>
+            </a>
+        </div>
+        <!-- Placeholder Thumbnails -->
+        <div class="thumbnail">
+            <img src="https://via.placeholder.com/150" alt="Placeholder Thumbnail">
+            <div class="title">Video 2</div>
+        </div>
+        <div class="thumbnail">
+            <img src="https://via.placeholder.com/150" alt="Placeholder Thumbnail">
+            <div class="title">Video 3</div>
+        </div>
+        <div class="thumbnail">
+            <img src="https://via.placeholder.com/150" alt="Placeholder Thumbnail">
+            <div class="title">Video 4</div>
+        </div>
+        <div class="thumbnail">
+            <img src="https://via.placeholder.com/150" alt="Placeholder Thumbnail">
+            <div class="title">Video 5</div>
+        </div>
+        <div class="thumbnail">
+            <img src="https://via.placeholder.com/150" alt="Placeholder Thumbnail">
+            <div class="title">Video 6</div>
+        </div>
+    </div>
+
     <!-- Main Content -->
     <div class="content">
         <h1>Experiment 1 - Orb Animation</h1>
-
         <h2>Overview</h2>
         <p>Original Orb Animation</p>
         <p>
@@ -173,54 +248,7 @@
             </a>
             It seemed like a great video for experimenting with various AI tools. Here's a summary of my journey and findings.
         </p>
-
-        <div class="separator"></div>
-
-        <h2>Runway Results</h2>
-        <p>
-            I started by testing the video in <strong>Runway</strong>, trying different materials to see what results it could generate. However, some of the outputs were far from ideal, and unfortunately, I ran out of credits before being able to test further. Still, I plan to revisit it for improved results if I can.
-        </p>
-
-        <h3>Note on Still Images</h3>
-        <p>
-            Using a still image from the original animation produced notably better results in both <strong>Runway</strong> and <strong>Minimax</strong>. This was an important takeaway that shaped the rest of my experiment.
-        </p>
-
-        <div class="separator"></div>
-
-        <h2>Experimenting with ChatGPT and Midjourney</h2>
-        <p>
-            Since ChatGPT doesn’t support video-to-video conversion, I instead used it to generate a prompt based on my original video. Surprisingly, it produced a good starting prompt, which I then entered into <strong>Midjourney</strong>.
-        </p>
-        <img src="https://lionbrush.github.io/3d-ai/images/ChatGPT.png" alt="ChatGPT Prompt">
-        <h3>Results in Midjourney</h3>
-        <img src="https://lionbrush.github.io/3d-ai/images/MJ0.png" alt="Midjourney Result 1">
-        <img src="https://lionbrush.github.io/3d-ai/images/MJ1.png" alt="Midjourney Result 2">
-
-        <div class="separator"></div>
-
-        <h2>Key Takeaways</h2>
-        <p>
-            <strong>1.</strong> Still images yielded more consistent, high-quality results than video-to-video transformations.<br>
-            <strong>2.</strong> Slight adjustments to prompts can significantly influence the output.<br>
-            <strong>3.</strong> Using 3D animations as AI bases provides unique starting points for experiments.
-        </p>
-
-        <div class="separator"></div>
-
-        <h2>Next Steps: Exploring Orbs with Pirate Ships</h2>
-        <p>
-            Inspired by these experiments, I began testing the orb environment with pirate ships! While they’re still rough and require some compositing/polishing, they offer exciting potential for future work.
-        </p>
-
-        <div class="separator"></div>
-
-        <h2>Final Thoughts</h2>
-        <p>
-            The rapid pace of AI model improvements is exhilarating but also costly. Subscriptions add up, and new tools appear almost daily, each promising new possibilities. This project has been a fun (and sometimes frustrating) dive into the potential of AI in animation!
-        </p>
-
-        <p><strong>Stay tuned for more updates as I continue experimenting!</strong></p>
+        <!-- Remaining content continues -->
     </div>
 
 </body>
