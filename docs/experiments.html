@@ -49,7 +49,6 @@
         .navbar nav {
             display: flex;
             gap: 1.5rem;
-            white-space: nowrap; /* Prevent text wrapping */
         }
 
         .navbar a {
@@ -73,7 +72,7 @@
         /* Gallery Styling */
         .gallery-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
             gap: 20px;
             justify-content: center;
             margin-top: 40px;
@@ -81,28 +80,28 @@
 
         .thumbnail {
             position: relative;
-            width: 100%;
-            height: auto;
+            width: 150px;
+            height: 150px;
             background: none;
             cursor: pointer;
         }
 
         .thumbnail img {
             width: 100%;
-            height: auto;
-            object-fit: contain;
+            height: 100%;
+            object-fit: cover;
             background: none;
         }
 
         .popup {
             position: absolute;
-            bottom: 20px;
-            left: 20px;
+            bottom: 10px;
+            left: 10px;
             background: rgba(0, 0, 0, 0.8);
             color: #ffffff;
             padding: 5px 10px;
             border-radius: 5px;
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             opacity: 0;
             pointer-events: none;
             transition: opacity 0.3s ease-in-out;
@@ -115,7 +114,7 @@
 
         .popup-link {
             display: inline-block;
-            margin-right: 10px;
+            margin-right: 5px;
             color: #58a6ff;
             text-decoration: none;
         }
@@ -126,7 +125,7 @@
 
         .thumbnail-text {
             display: none;
-            margin-top: 20px;
+            margin-top: 10px;
             text-align: center;
         }
     </style>
@@ -136,16 +135,16 @@
     <!-- Navbar -->
     <div class="navbar">
         <div class="logo-container">
-            <a href="https://lionbrush.github.io/3d-ai/">
+            <a href="index.html">
                 <img src="https://lionbrush.github.io/3d-ai/images/Original_Render.gif" alt="Logo GIF">
             </a>
             <span>3D-AI</span>
         </div>
         <nav>
-            <a href="#">Home</a>
-            <a href="#">Experiments</a>
-            <a href="#">GitHub</a>
-            <a href="#">About</a>
+            <a href="index.html">Home</a>
+            <a href="experiments.html">Experiments</a>
+            <a href="https://github.com/lionbrush/3d-ai" target="_blank">GitHub</a>
+            <a href="about.html">About</a>
         </nav>
     </div>
 
@@ -167,7 +166,7 @@
 
         <!-- Placeholder Thumbnail 2 -->
         <div class="thumbnail">
-            <img src="https://via.placeholder.com/300x200.gif" alt="Placeholder Thumbnail 2">
+            <img src="https://via.placeholder.com/150" alt="Placeholder Thumbnail 2">
             <div class="popup">
                 <a class="popup-link" href="#" onclick="showText(2)">OVERVIEW</a>
                 <a class="popup-link" href="#" target="_blank">LINK TO VIDEO</a>
@@ -180,7 +179,7 @@
 
         <!-- Placeholder Thumbnail 3 -->
         <div class="thumbnail">
-            <img src="https://via.placeholder.com/300x200.gif" alt="Placeholder Thumbnail 3">
+            <img src="https://via.placeholder.com/150" alt="Placeholder Thumbnail 3">
             <div class="popup">
                 <a class="popup-link" href="#" onclick="showText(3)">OVERVIEW</a>
                 <a class="popup-link" href="#" target="_blank">LINK TO VIDEO</a>
