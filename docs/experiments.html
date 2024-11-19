@@ -133,34 +133,30 @@
             height: 100%;
             object-fit: cover;
         }
-
+       
         .popup {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        color: #ffffff;
-        font-size: 1rem;
-        font-weight: normal;
+        color: #ffffff; /* Set text color to white */
+        font-size: 1.4rem; /* Increase font size for better visibility */
+        font-weight: 700; /* Make the text bold */
+        text-shadow: 0 0 5px rgba(0, 0, 0, 0.8); /* Add shadow for better contrast */
         opacity: 0;
         pointer-events: none;
         transition: opacity 0.3s ease-in-out, font-size 0.3s ease-in-out, font-weight 0.3s ease-in-out;
-        background: transparent; /* Ensure no background */
-        border: none; /* Ensure no border */
-        padding: 0; /* Remove extra padding */
-        line-height: 1; /* Prevent extra line height artifacts */
         }
-
+    
+        .thumbnail:hover .popup {
+        opacity: 1;
+        }
        
         .thumbnail:hover {
             background-color: transparent;
             transition: background-color 0.3s ease-in-out;
         }
-        
-        .thumbnail:hover .popup {
-            opacity: 1;
-            pointer-events: auto;
-        }
+
 
         .popup-link {
             display: block;
