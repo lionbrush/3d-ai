@@ -59,38 +59,7 @@
             text-decoration: underline;
         }
 
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #1a1a1a;
-            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
-            z-index: 1;
-            min-width: 150px;
-        }
-
-        .dropdown-content a {
-            color: #58a6ff;
-            text-decoration: none;
-            display: block;
-            padding: 10px;
-            text-align: center;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #333;
-            color: #ffffff;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        /* Thumbnail Gallery */
+        /* Video Thumbnail Gallery */
         .video-gallery {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -108,37 +77,15 @@
             border-radius: 10px;
         }
 
-        .thumbnail img {
+        .thumbnail iframe {
             display: block;
             width: 100%;
-            height: auto;
-        }
-
-        .thumbnail video {
-            display: block;
-            width: 100%;
-            height: auto;
-            opacity: 0;
+            height: 100%;
             pointer-events: none;
-            transition: opacity 0.3s ease-in-out;
         }
 
-        .thumbnail:hover video {
-            opacity: 1;
+        .thumbnail:hover iframe {
             pointer-events: auto;
-        }
-
-        .thumbnail .title {
-            position: absolute;
-            bottom: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: rgba(0, 0, 0, 0.7);
-            color: #ffffff;
-            padding: 5px 10px;
-            font-size: 0.9rem;
-            border-radius: 5px;
-            text-align: center;
         }
 
         /* Content Styling */
@@ -148,18 +95,9 @@
             padding: 20px;
         }
 
-        .content h1, .content h2, .content h3 {
+        .content h1, .content h2 {
             color: #ffffff;
             text-align: center;
-        }
-
-        .content a {
-            color: #58a6ff;
-            text-decoration: none;
-        }
-
-        .content a:hover {
-            text-decoration: underline;
         }
 
         .content p {
@@ -171,11 +109,6 @@
             max-width: 100%;
             height: auto;
             margin: 20px auto;
-        }
-
-        .separator {
-            border-top: 1px solid #30363d;
-            margin: 40px 0;
         }
     </style>
 </head>
@@ -205,34 +138,41 @@
     <!-- Video Thumbnail Gallery -->
     <div class="video-gallery">
         <div class="thumbnail">
-            <a href="https://youtu.be/2qL-rMq01zo" target="_blank">
-                <img src="https://lionbrush.github.io/3d-ai/images/Original_Screenshot_2.jpg" alt="Orb Animation Thumbnail">
-                <video autoplay muted loop>
-                    <source src="https://lionbrush.github.io/3d-ai/videos/orb-animation.mp4" type="video/mp4">
-                </video>
-                <div class="title">Orb Animation</div>
-            </a>
+            <iframe 
+                src="https://www.youtube.com/embed/2qL-rMq01zo?autoplay=1&mute=1&loop=1&playlist=2qL-rMq01zo" 
+                allowfullscreen>
+            </iframe>
         </div>
         <!-- Placeholder Thumbnails -->
         <div class="thumbnail">
-            <img src="https://via.placeholder.com/150" alt="Placeholder Thumbnail">
-            <div class="title">Video 2</div>
+            <iframe 
+                src="https://www.youtube.com/embed/example-video-id?autoplay=1&mute=1&loop=1&playlist=example-video-id" 
+                allowfullscreen>
+            </iframe>
         </div>
         <div class="thumbnail">
-            <img src="https://via.placeholder.com/150" alt="Placeholder Thumbnail">
-            <div class="title">Video 3</div>
+            <iframe 
+                src="https://www.youtube.com/embed/example-video-id?autoplay=1&mute=1&loop=1&playlist=example-video-id" 
+                allowfullscreen>
+            </iframe>
         </div>
         <div class="thumbnail">
-            <img src="https://via.placeholder.com/150" alt="Placeholder Thumbnail">
-            <div class="title">Video 4</div>
+            <iframe 
+                src="https://www.youtube.com/embed/example-video-id?autoplay=1&mute=1&loop=1&playlist=example-video-id" 
+                allowfullscreen>
+            </iframe>
         </div>
         <div class="thumbnail">
-            <img src="https://via.placeholder.com/150" alt="Placeholder Thumbnail">
-            <div class="title">Video 5</div>
+            <iframe 
+                src="https://www.youtube.com/embed/example-video-id?autoplay=1&mute=1&loop=1&playlist=example-video-id" 
+                allowfullscreen>
+            </iframe>
         </div>
         <div class="thumbnail">
-            <img src="https://via.placeholder.com/150" alt="Placeholder Thumbnail">
-            <div class="title">Video 6</div>
+            <iframe 
+                src="https://www.youtube.com/embed/example-video-id?autoplay=1&mute=1&loop=1&playlist=example-video-id" 
+                allowfullscreen>
+            </iframe>
         </div>
     </div>
 
@@ -240,15 +180,13 @@
     <div class="content">
         <h1>Experiment 1 - Orb Animation</h1>
         <h2>Overview</h2>
-        <p>Original Orb Animation</p>
         <p>
-            In Blender, I rendered an animation of an orb with particles moving around inside.
+            Original Orb Animation: In Blender, I rendered an animation of an orb with particles moving around inside.
             <a href="https://youtu.be/2qL-rMq01zo">
                 <img src="https://lionbrush.github.io/3d-ai/images/Original_Screenshot_2.jpg" alt="3D Orb Animation Render">
             </a>
-            It seemed like a great video for experimenting with various AI tools. Here's a summary of my journey and findings.
         </p>
-        <!-- Remaining content continues -->
+        <!-- Additional content below -->
     </div>
 
 </body>
