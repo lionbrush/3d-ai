@@ -5,6 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3D-AI</title>
     <style>
+        /* Mobile-Only Styling for Header */
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap; /* Allow wrapping on smaller screens */
+        justify-content: center;
+        text-align: center; /* Center the navbar items */
+    }
+
+    .navbar nav {
+        flex-direction: column; /* Stack links vertically */
+        gap: 0.5rem;
+    }
+
+    .navbar .logo-container {
+        margin-bottom: 1rem; /* Add spacing between logo and links */
+    }
+}
         /* General Styling */
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
