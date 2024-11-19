@@ -26,6 +26,7 @@
             top: 0;
             width: 100%;
             z-index: 10;
+            box-sizing: border-box;
         }
 
         .navbar .logo-container {
@@ -59,6 +60,36 @@
             text-decoration: underline;
         }
 
+        /* Dropdown Menu */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #1a1a1a;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+            z-index: 1;
+            min-width: 150px;
+        }
+
+        .dropdown-content a {
+            color: #58a6ff;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #333;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
         /* Page Title */
         h1 {
             color: #ffffff;
@@ -68,7 +99,7 @@
             text-transform: uppercase;
         }
 
-        /* Gallery Container */
+        /* Gallery Styling */
         .gallery-container {
             display: flex;
             flex-direction: column;
@@ -84,6 +115,7 @@
         }
 
         .thumbnail {
+            position: relative;
             width: 150px;
             height: 150px;
             cursor: pointer;
@@ -95,17 +127,34 @@
             object-fit: cover;
         }
 
-        .description {
-            max-width: 500px;
+        .popup {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background: rgba(0, 0, 0, 0.8);
+            color: #ffffff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease-in-out;
         }
 
-        .description h2 {
-            margin: 0;
-            font-size: 1.5rem;
+        .thumbnail:hover .popup {
+            opacity: 1;
+            pointer-events: auto;
         }
 
-        .description p {
-            margin: 5px 0 0;
+        .popup-link {
+            display: block;
+            margin-bottom: 5px;
+            color: #58a6ff;
+            text-decoration: none;
+        }
+
+        .popup-link:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -121,7 +170,12 @@
         </div>
         <nav>
             <a href="index.html">Home</a>
-            <a href="experiments.html">Experiments</a>
+            <div class="dropdown">
+                <a href="experiments.html">Experiments</a>
+                <div class="dropdown-content">
+                    <a href="exp1-orb.html">Experiment 1: Orb Animation</a>
+                </div>
+            </div>
             <a href="https://github.com/lionbrush/3d-ai" target="_blank">GitHub</a>
             <a href="about.html">About</a>
         </nav>
@@ -134,14 +188,11 @@
         <div class="gallery-item">
             <!-- Thumbnail -->
             <div class="thumbnail">
-                <a href="https://www.youtube.com/watch?v=2qL-rMq01zo" target="_blank">
-                    <img src="https://lionbrush.github.io/3d-ai/images/Original_Render.gif" alt="Orb Animation Thumbnail">
-                </a>
-            </div>
-            <!-- Description -->
-            <div class="description">
-                <h2>Experiment 1: Orb Animation</h2>
-                <p>This experiment explores the use of particle effects in a 3D orb rendered in Blender. Click on the thumbnail to watch the animation on YouTube.</p>
+                <img src="https://lionbrush.github.io/3d-ai/images/Original_Render.gif" alt="Orb Animation Thumbnail">
+                <div class="popup">
+                    <a class="popup-link" href="https://www.youtube.com/watch?v=2qL-rMq01zo" target="_blank">LINK TO VIDEO</a>
+                    <a class="popup-link" href="exp1-orb.html">MORE DETAILS</a>
+                </div>
             </div>
         </div>
     </div>
