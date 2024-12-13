@@ -5,24 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experiment 1 - Orb Animation</title>
     <style>
-        /* Mobile-Only Styling for Header */
-@media (max-width: 768px) {
-    .navbar {
-        flex-wrap: wrap; /* Allow wrapping on smaller screens */
-        justify-content: center;
-        text-align: center; /* Center the navbar items */
-    }
-
-    .navbar nav {
-        flex-direction: column; /* Stack links vertically */
-        gap: 0.5rem;
-    }
-
-    .navbar .logo-container {
-        margin-bottom: 1rem; /* Add spacing between logo and links */
-    }
-}
-
         /* General Styling */
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
@@ -31,6 +13,7 @@
             color: #c9d1d9;
             margin: 0;
             padding: 0;
+            display: flex;
         }
 
         /* Navbar Styling */
@@ -60,13 +43,6 @@
             vertical-align: middle;
         }
 
-        .navbar .logo-container span {
-            color: #ffffff;
-            font-size: 1.5rem;
-            font-weight: bold;
-            vertical-align: middle;
-        }
-
         .navbar nav {
             display: flex;
             gap: 1.5rem;
@@ -81,52 +57,23 @@
             text-decoration: underline;
         }
 
-        /* Dropdown Menu */
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #1a1a1a;
-            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
-            z-index: 1;
-            min-width: 150px;
-        }
-
-        .dropdown-content a {
-            color: #58a6ff;
-            text-decoration: none;
-            display: block;
-            padding: 10px;
-            text-align: center;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #333;
-            color: #ffffff;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
         /* Two-Column Layout */
         .container {
             display: flex;
-            gap: 20px;
-            max-width: 1200px;
-            margin: 40px auto;
-            padding: 0 20px;
+            width: 100%;
+            height: 100vh; /* Full viewport height */
+            overflow: hidden; /* Prevent page scrolling */
         }
 
+        /* Left Column: Fixed Text Content */
         .text-content {
-            flex: 2;
-            max-height: 80vh;
-            overflow-y: auto;
-            padding-right: 20px;
+            flex: 0 0 30%; /* Fixed width */
+            height: 100%; /* Full height */
+            overflow-y: auto; /* Allows scrolling within the column */
+            padding: 20px;
+            box-sizing: border-box;
+            background: #000000;
+            border-right: 1px solid #30363d;
         }
 
         .text-content h1, .text-content h2, .text-content h3 {
@@ -142,17 +89,15 @@
             text-decoration: underline;
         }
 
-        .text-content img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 1rem;
-        }
-
+        /* Right Column: Video Gallery */
         .video-gallery {
-            flex: 1;
+            flex: 1; /* Takes remaining space */
             display: grid;
             grid-template-columns: 1fr;
             gap: 15px;
+            padding: 20px;
+            box-sizing: border-box;
+            overflow-y: auto; /* Allows scrolling within the column */
         }
 
         .video-thumbnail {
@@ -174,7 +119,6 @@
             height: 100%;
             border: none;
         }
-
     </style>
 </head>
 <body>
@@ -202,12 +146,11 @@
         </nav>
     </div>
 
- <!-- Main Content -->
-<div class="container">
-    <!-- Left Column: Text Content -->
-    <div class="text-content">
-        <h1>Experiment 1 - Orb Animation</h1>
-        <div class="toc">
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Left Column: Text Content -->
+        <div class="text-content">
+            <h1>Experiment 1 - Orb Animation</h1>
             <h2>Table of Contents</h2>
             <ul>
                 <li><a href="#video-gallery">Results</a></li>
@@ -219,100 +162,12 @@
                 <li><a href="#midjourney">Midjourney</a></li>
                 <li><a href="#key-takeaways">Key Takeaways</a></li>
             </ul>
+            <!-- Add additional text content here -->
         </div>
-        
-        <h2 id="overview">Overview</h2>
-        <p>Original Orb Animation</p>
-        <p>In Blender, I rendered an animation of an orb with particles moving around inside.</p>
-        <a href="https://youtu.be/2qL-rMq01zo" target="_blank">
-            <img src="../images/Original_Screenshot_2.jpg" alt="3D Orb Animation Render">
-        </a>
-        <p>It seemed like a great video for experimenting with various AI tools. Here's a summary of my journey and findings:</p>
 
-        <h2 id="runway">Runway</h2>
-        <p>I started by testing the video in <strong>Runway</strong>, trying different materials to see what results it could generate. However, some of the outputs were far from ideal, and unfortunately, I ran out of credits before being able to test further. Still, I plan to revisit it for improved results if I can.</p>
-        <p><strong>Note on Still Images:</strong> Using a still image from the original animation produced notably better results in both <strong>Runway</strong> and <strong>Minimax</strong>. This was an important takeaway that shaped the rest of my experiment. However, by the time I uploaded these videos Runway's Video 2 Video model vastly improved. A month makes a world of difference when it comes to what can be produced with AI.</p>
-        <p><a href="https://www.youtube.com/embed/2qL-rMq01zo" target="_blank">Runway Result</a></p>
-        
-        <h2 id="minimax">Minimax</h2>
-        <p><strong>Minimax</strong> produced some fascinating results when working with the orb animation. Its advanced algorithms enhanced specific details, such as particle motion and the glow of the orb, creating a more dynamic and visually appealing output.</p>
-        <p><a href="https://www.youtube.com/embed/s30prGRTuXQ" target="_blank">Minimax Result</a></p>
-
-        <h2 id="chatgpt">ChatGPT</h2>
-        <p>Since ChatGPT doesn’t support video-to-video conversion, I instead used it to generate a prompt based on my original video. Surprisingly, it produced a good starting prompt, which I then entered into <strong>Midjourney</strong>.</p>
-        
-        <h2 id="kling">Kling</h2>
-        <p><strong>Kling</strong> delivered impressive results in terms of stylization. Its unique approach to visual textures and dynamic effects brought a fresh perspective to the orb animation, creating a dreamy and artistic environment.</p>
-        <p><a href="https://www.youtube.com/embed/sTvmuxaGNaQ" target="_blank">Kling Result</a></p>
-
-        <h2 id="midjourney">Midjourney</h2>
-        <p>The initial output from Midjourney was intriguing but didn't fully capture the environment I envisioned within the orb. However, by refining the prompt and adding a few keywords, I achieved results that were closer to my vision.</p>
-
-        <h2 id="key-takeaways">Key Takeaways</h2>
-        <ul>
-            <li><strong>Still Images vs. Videos:</strong> Still images yielded more consistent, high-quality results than video-to-video transformations. AI seems to perform best when given a single frame to work with.</li>
-            <li><strong>Refining Prompts:</strong> Slight adjustments to prompts can significantly influence the output, especially in capturing specific environments or themes.</li>
-            <li><strong>Using 3D Animations as AI Bases:</strong> My 3D animation served as a solid foundation for further experiments in AI video, providing unique starting points for more complex visuals.</li>
-        </ul>
-    </div>
-
-    <!-- Right Column: Video Thumbnail Gallery -->
-    <div id="video-gallery" class="video-gallery">
-        <div class="video-thumbnail">
-            <iframe 
-                src="https://www.youtube.com/embed/2qL-rMq01zo?autoplay=1&controls=0&mute=1&loop=1&playlist=2qL-rMq01zo" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-            </iframe>
-        </div>
-        <div class="video-thumbnail">
-            <iframe 
-                src="https://www.youtube.com/embed/i-q8qg3roMs?autoplay=1&controls=0&mute=1&loop=1&playlist=i-q8qg3roMs"
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-            </iframe>
-        </div>
-       <div class="video-thumbnail">
-            <iframe 
-                src="https://www.youtube.com/embed/FWMRjZAa7ik?autoplay=1&controls=0&mute=1&loop=1&playlist=FWMRjZAa7ik"
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-            </iframe>
-        </div>
-               <div class="video-thumbnail">
-            <iframe 
-                src="https://www.youtube.com/embed/s30prGRTuXQ?&controls=0&mute=1&loop=1" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-            </iframe>
-        </div>
-        <div class="video-thumbnail">
-            <iframe 
-                src="https://www.youtube.com/embed/YX8etGCzAUU?&controls=0&mute=1&loop=1" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-            </iframe>
-        </div>
-        <div class="video-thumbnail">
-            <iframe 
-                src="https://www.youtube.com/embed/sTvmuxaGNaQ?&controls=0&mute=1&loop=1" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-            </iframe>
-        </div>
-        <div class="video-thumbnail">
-            <iframe 
-                src="https://www.youtube.com/embed/kyU6tIy3EQ4?&controls=0&mute=1&loop=1" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-            </iframe>
+        <!-- Right Column: Video Gallery -->
+        <div id="video-gallery" class="video-gallery">
+            <!-- Video thumbnails go here -->
         </div>
     </div>
 
