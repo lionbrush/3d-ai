@@ -1,0 +1,49 @@
+// Define the HUD name to avoid hardcoding it multiple times
+string $hudName = "HUDCustomText"; 
+
+// Remove any existing HUD with the same name to prevent conflicts
+if (`headsUpDisplay -exists $hudName`) {
+    headsUpDisplay -rem $hudName;
+}
+
+// Define the text to display in the HUD
+string $hudLabel = "H A J  //  @ L I O N B R U S H";
+
+// Create a new HUD at the specified screen section and position
+headsUpDisplay 
+    -section 3 // Section 3 places it at the bottom area of the viewport
+    -block 0 
+    -blockSize "small" 
+    -label $hudLabel 
+    -labelFontSize "large" 
+    $hudName; // Use the pre-defined HUD name
+
+// Confirm if the HUD was successfully created
+if (`headsUpDisplay -exists $hudName`) {
+    print("HUD created successfully: " + $hudName + "\n");
+} else {
+    print("Failed to create HUD: " + $hudName + "\n");
+}
+
+// Set the current time to ensure the playblast starts at the correct frame
+currentTime 1; // Set to frame 1 or adjust as needed
+
+// Perform the playblast operation
+playblast 
+    -format "avi" // Specify AVI as the file format
+    -filename "playblast" // Save the file as "playblast"
+    -forceOverwrite // Overwrite the file if it already exists
+    -sequenceTime 0 
+    -clearCache 1 // Clear the cache to prevent artifacts
+    -viewer 1 // Automatically open the playblast in the default viewer
+    -showOrnaments 1 // Include viewport ornaments like the HUD
+    -fp 4 // Set the playback frame padding
+    -percent 100 // Render at full resolution
+    -compression "none" // Use no compression for maximum quality
+    -quality 100 // Maximum quality for the playblast
+    -widthHeight 1920 1080; // Set resolution to Full HD (1920x1080)
+
+// Cleanup the HUD after the playblast operation
+if (`headsUpDisplay -exists $hudName`) {
+    headsUpDisplay -rem $hudName; // Remove the HUD if it still exists
+}
