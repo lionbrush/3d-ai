@@ -1,4 +1,4 @@
-# Maya Playblast Script
+# Maya Playblast Tool
 
 ## Overview
 This script automates the process of creating a **playblast** in Autodesk Maya while overlaying a customizable **Heads-Up Display (HUD)** with text. It ensures that your viewport captures are professional and consistent with predefined settings.
