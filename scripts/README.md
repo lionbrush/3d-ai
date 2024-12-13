@@ -54,5 +54,5 @@ This project is licensed under the [MIT License](../LICENSE). Feel free to use, 
 
 ### Author
 
-**H A J**  
+**H A J / / @ L I O N B R U S H**  
 Follow my work: [Linktree](https://linktr.ee/lionbrush).
