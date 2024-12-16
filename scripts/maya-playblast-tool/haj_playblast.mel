@@ -6,7 +6,7 @@ This script automates the process of creating a **playblast** in Autodesk Maya w
 ---
 
 ## Features
-- **Custom HUD**: Displays text like "H A J // @ L I O N B R U S H" at the bottom of the viewport.
+- **Custom HUD**: Displays text like "H A J // @ L I O N B R U S H" on the playblast viewport.
 - **Full HD Playblast**: Captures viewport content at 1920x1080 resolution with maximum quality.
 - **Automatic Cleanup**: Ensures that the HUD is removed after the playblast operation.
 
